@@ -21,7 +21,7 @@ const App: React.FC = () => {
       }}
     >
       {/* Debug banner – just to be sure */}
-      <div
+      {/* <div
         style={{
           position: 'fixed',
           top: 8,
@@ -35,7 +35,7 @@ const App: React.FC = () => {
         }}
       >
         YonkoMedia is loaded
-      </div>
+      </div> */}
 
       <Navbar />
       <Hero />
