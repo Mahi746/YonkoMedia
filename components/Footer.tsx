@@ -9,11 +9,11 @@ const Footer: React.FC = () => {
            <span className="text-white font-bold">YonkoMedia</span>
         </div>
         
-        <div className="flex gap-8">
+        {/* <div className="flex gap-8">
             <a href="#" className="hover:text-brand-blue transition-colors">Twitter</a>
             <a href="#" className="hover:text-brand-blue transition-colors">LinkedIn</a>
             <a href="#" className="hover:text-brand-blue transition-colors">Instagram</a>
-        </div>
+        </div> */}
 
         <div>
             &copy; {new Date().getFullYear()} YonkoMedia. All rights reserved.
