@@ -66,9 +66,9 @@ const Hero: React.FC = () => {
             >
               Fix my bottlenecks
             </Button>
-            <Button variant="outline" icon={<ChevronRight className="w-4 h-4" />}>
+            {/* <Button variant="outline" icon={<ChevronRight className="w-4 h-4" />}>
               See how we work
-            </Button>
+            </Button> */}
           </motion.div>
         </div>
 
