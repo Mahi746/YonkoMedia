@@ -5,28 +5,28 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const faqs = [
   {
-    q: 'What exactly is a fractional CMO?',
-    a: 'A fractional CMO gives you senior marketing leadership — strategy, direction, execution oversight — without the cost of a full-time hire. You get the thinking and the system, not just deliverables.',
+    q: 'Why not just hire a full-time CMO?',
+    a: 'A full-time CMO costs £150K–£250K a year before bonuses, equity, and onboarding time. Most businesses at the £1M–£10M stage don\'t need a full-time hire — they need senior thinking applied to the right problems, fast. That\'s exactly what this is. You get the strategy, the system, and the execution oversight without the overhead.',
   },
   {
-    q: 'How is this different from hiring a marketing agency?',
-    a: 'Agencies execute campaigns. We build the system that makes campaigns work. We diagnose first, align second, and then drive execution — whether that\'s through your team or ours.',
+    q: 'We\'ve tried agencies before and nothing changed. Why is this different?',
+    a: 'Agencies are incentivised to run activity — ads, content, campaigns — because that\'s what they bill for. We\'re incentivised to fix your system, because that\'s what we\'re measured on. We diagnose first. We don\'t touch execution until we know exactly which lever is broken and why. That\'s the difference between activity and actual growth.',
   },
   {
-    q: 'What do the four levers actually mean for my business?',
-    a: 'Traffic, Conversion, Retention, and Pricing are the only four inputs that determine your revenue. Most businesses have one or two working well and ignore the others. We find which levers are limiting growth and fix them in sequence.',
+    q: 'How do you know which lever to fix first?',
+    a: 'That\'s what Phase 1 is for. Before we recommend anything, we audit all four levers — Traffic, Conversion, Retention, Pricing — and find where the biggest leak is. Most businesses assume it\'s traffic. It\'s usually conversion or retention. We go where the data points, not where it\'s easiest to sell.',
   },
   {
-    q: 'How long before we see results?',
-    a: 'Phase 1 (weeks 1–2) is diagnosis and alignment — no execution yet. Phase 2 is where things start moving. Most clients see meaningful shifts within 60–90 days. The system compounds from there.',
+    q: 'Do you just make a plan and disappear?',
+    a: 'No. Strategy without execution is just a document. After Phase 1, we move into active execution — either leading your existing team, plugging in our own specialists, or both. We stay in it until the system is working. You\'ll have direct access throughout, not a monthly slide deck.',
   },
   {
-    q: 'Do we need a big team or big budget to work together?',
-    a: 'No. We\'ve worked with lean teams and bootstrapped brands. The system scales to your resources — we tell you where to focus, so nothing is wasted.',
+    q: 'How quickly can we realistically expect results?',
+    a: 'Weeks 1–2 are diagnosis. No execution, just clarity. From Week 3 onwards, things start moving. Most clients see measurable shifts within 60–90 days — not vanity metrics, actual revenue movement. The compounding happens from month 3 onwards when the levers start working together.',
   },
   {
-    q: 'How do we get started?',
-    a: 'Book a discovery call. We\'ll spend 30 minutes understanding your business and whether there\'s a fit. If there is, we\'ll outline exactly what Phase 1 looks like for you.',
+    q: 'What does it cost to work with you?',
+    a: 'We don\'t publish fixed pricing because the scope varies. What we can tell you: it\'s structured as a monthly engagement, scoped to your stage and goals. The discovery call is free, and if there\'s no fit, we\'ll tell you that too. Book 30 minutes and we\'ll give you a straight answer.',
   },
 ]
 
