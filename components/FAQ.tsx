@@ -5,6 +5,10 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 const faqs = [
   {
+    q: 'What exactly is a fractional CMO?',
+    a: 'A fractional CMO gives you senior marketing leadership — strategy, direction, execution oversight — without the cost of a full-time hire. You get the thinking and the system, not just deliverables.',
+  },
+  {
     q: 'Why not just hire a full-time CMO?',
     a: 'A full-time CMO costs £150K–£250K a year before bonuses, equity, and onboarding time. Most businesses at the £1M–£10M stage don\'t need a full-time hire — they need senior thinking applied to the right problems, fast. That\'s exactly what this is. You get the strategy, the system, and the execution oversight without the overhead.',
   },
@@ -13,8 +17,12 @@ const faqs = [
     a: 'Agencies are incentivised to run activity — ads, content, campaigns — because that\'s what they bill for. We\'re incentivised to fix your system, because that\'s what we\'re measured on. We diagnose first. We don\'t touch execution until we know exactly which lever is broken and why. That\'s the difference between activity and actual growth.',
   },
   {
+    q: 'What do the four levers actually mean for my business?',
+    a: 'Traffic, Conversion, Retention, and Pricing are the only four inputs that determine your revenue. Most businesses have one or two working well and ignore the others. We find which levers are limiting growth and fix them in sequence.',
+  },
+  {
     q: 'How do you know which lever to fix first?',
-    a: 'That\'s what Phase 1 is for. Before we recommend anything, we audit all four levers — Traffic, Conversion, Retention, Pricing — and find where the biggest leak is. Most businesses assume it\'s traffic. It\'s usually conversion or retention. We go where the data points, not where it\'s easiest to sell.',
+    a: 'That\'s what Phase 1 is for. Before we recommend anything, we audit all four levers and find where the biggest leak is. Most businesses assume it\'s traffic. It\'s usually conversion or retention. We go where the data points, not where it\'s easiest to sell.',
   },
   {
     q: 'Do you just make a plan and disappear?',
