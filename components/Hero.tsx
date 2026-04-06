@@ -60,8 +60,8 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto">
 
         {/* Overline */}
-        <motion.div {...fadeUp(0.1)}>
-          <span className="inline-flex items-center gap-2 border border-accent/30 bg-accent/8 text-accent text-xs font-semibold px-4 py-2 rounded-full uppercase tracking-widest mb-8">
+        <motion.div {...fadeUp(0.1)} className="mb-5">
+          <span className="inline-flex items-center gap-2 border border-accent/30 bg-accent/8 text-accent text-xs font-semibold px-4 py-2 rounded-full uppercase tracking-widest">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
             Fractional CMO Studio
           </span>
@@ -69,26 +69,26 @@ export default function Hero() {
 
         {/* Headline */}
         <motion.h1 {...fadeUp(0.2)}
-          className="font-display font-bold text-[clamp(2.8rem,7vw,6.5rem)] leading-[0.95] tracking-tight text-white mb-6">
+          className="font-display font-bold text-[clamp(2.8rem,7vw,6.5rem)] leading-[0.95] tracking-tight text-white mb-5">
           We make your growth
           <br />
           <span className="gradient-text">unstoppable.</span>
         </motion.h1>
 
         {/* Sub */}
-        <motion.p {...fadeUp(0.3)} className="text-white/50 text-lg max-w-lg leading-relaxed mb-8">
+        <motion.p {...fadeUp(0.3)} className="text-white/50 text-base sm:text-lg max-w-lg leading-relaxed mb-6 px-2">
           We work as a fractional CMO to fix the four levers that actually drive revenue.
         </motion.p>
 
         {/* Formula — the IP */}
-        <motion.div {...fadeUp(0.4)} className="mb-10">
-          <div className="inline-flex items-center gap-0 border border-white/10 bg-white/[0.03] rounded-2xl px-6 py-4 backdrop-blur-sm">
-            <span className="text-white/40 text-sm font-medium mr-3">Revenue =</span>
+        <motion.div {...fadeUp(0.4)} className="mb-7 w-full max-w-lg px-2">
+          <div className="flex items-center gap-0 border border-white/10 bg-white/[0.03] rounded-2xl px-4 sm:px-6 py-3.5 backdrop-blur-sm overflow-x-auto scrollbar-none">
+            <span className="text-white/40 text-xs sm:text-sm font-medium mr-2 sm:mr-3 flex-shrink-0">Revenue =</span>
             {levers.map((l, i) => (
-              <span key={l} className="flex items-center">
-                <span className="text-accent font-semibold text-sm hover:text-white transition-colors duration-200 cursor-default">{l}</span>
+              <span key={l} className="flex items-center flex-shrink-0">
+                <span className="text-accent font-semibold text-xs sm:text-sm cursor-default">{l}</span>
                 {i < levers.length - 1 && (
-                  <span className="text-white/20 mx-2 text-sm">×</span>
+                  <span className="text-white/20 mx-1.5 sm:mx-2 text-xs sm:text-sm">×</span>
                 )}
               </span>
             ))}
@@ -97,21 +97,17 @@ export default function Hero() {
         </motion.div>
 
         {/* CTAs */}
-        <motion.div {...fadeUp(0.5)} className="flex flex-wrap items-center justify-center gap-3 mb-4">
+        <motion.div {...fadeUp(0.5)} className="flex flex-wrap items-center justify-center gap-3">
           <button onClick={openCalendly}
-            className="group inline-flex items-center gap-2 bg-accent text-dark font-bold text-base px-7 py-4 rounded-full hover:scale-105 hover:shadow-[0_0_36px_rgba(204,251,85,0.45)] transition-all duration-300">
+            className="group inline-flex items-center gap-2 bg-accent text-dark font-bold text-sm sm:text-base px-6 sm:px-7 py-3.5 sm:py-4 rounded-full hover:scale-105 hover:shadow-[0_0_36px_rgba(204,251,85,0.45)] transition-all duration-300">
             Fix my growth levers
             <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
           </button>
           <a href="#how-it-works"
-            className="inline-flex items-center gap-2 border border-white/10 text-white/60 hover:text-white hover:border-white/25 text-base font-medium px-7 py-4 rounded-full transition-all duration-300">
+            className="inline-flex items-center gap-2 border border-white/10 text-white/60 hover:text-white hover:border-white/25 text-sm sm:text-base font-medium px-6 sm:px-7 py-3.5 sm:py-4 rounded-full transition-all duration-300">
             See how it works
           </a>
         </motion.div>
-
-        <motion.p {...fadeUp(0.6)} className="text-white/20 text-xs tracking-wide">
-          No retainers. No fluff. Just a system that compounds.
-        </motion.p>
       </div>
     </section>
   )
