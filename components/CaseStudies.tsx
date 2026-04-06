@@ -4,6 +4,9 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { AnimatedHeading, AnimatedTag } from './AnimatedText'
 
+const CALENDLY_URL = 'https://calendly.com/akshay-yonkomedia/30min'
+const openCalendly = () => (window as any).Calendly?.initPopupWidget({ url: CALENDLY_URL })
+
 const cases = [
   {
     id: 1,
@@ -194,10 +197,10 @@ export default function CaseStudies() {
                 </ul>
               </div>
 
-              <a href="#contact"
+              <button onClick={openCalendly}
                 className="mt-8 w-full inline-flex items-center justify-center gap-2 bg-accent text-dark font-bold py-4 rounded-full hover:scale-[1.02] transition-all duration-200">
                 Get similar results →
-              </a>
+              </button>
             </motion.div>
           </>
         )}

@@ -25,6 +25,9 @@ const floaters = [
 
 const levers = ['Traffic', 'Conversion', 'Retention', 'Pricing']
 
+const CALENDLY_URL = 'https://calendly.com/akshay-yonkomedia/30min'
+const openCalendly = () => (window as any).Calendly?.initPopupWidget({ url: CALENDLY_URL })
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-6 overflow-hidden bg-dark">
@@ -95,11 +98,11 @@ export default function Hero() {
 
         {/* CTAs */}
         <motion.div {...fadeUp(0.5)} className="flex flex-wrap items-center justify-center gap-3 mb-4">
-          <a href="#contact"
+          <button onClick={openCalendly}
             className="group inline-flex items-center gap-2 bg-accent text-dark font-bold text-base px-7 py-4 rounded-full hover:scale-105 hover:shadow-[0_0_36px_rgba(204,251,85,0.45)] transition-all duration-300">
             Fix my growth levers
             <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
-          </a>
+          </button>
           <a href="#how-it-works"
             className="inline-flex items-center gap-2 border border-white/10 text-white/60 hover:text-white hover:border-white/25 text-base font-medium px-7 py-4 rounded-full transition-all duration-300">
             See how it works

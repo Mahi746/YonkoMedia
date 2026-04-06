@@ -2,6 +2,9 @@
 
 import { motion } from 'framer-motion'
 
+const CALENDLY_URL = 'https://calendly.com/akshay-yonkomedia/30min'
+const openCalendly = () => (window as any).Calendly?.initPopupWidget({ url: CALENDLY_URL })
+
 export default function Footer() {
   return (
     <footer id="contact" className="border-t border-white/5 px-6 py-20 bg-dark">
@@ -26,10 +29,10 @@ export default function Footer() {
             <p className="text-white/40 text-base max-w-md mx-auto mb-10">
               Book a 30-minute discovery call. We&apos;ll figure out which lever is limiting your growth — and what to do about it.
             </p>
-            <a href="mailto:hello@yonkomedia.com"
+            <button onClick={openCalendly}
               className="inline-flex items-center gap-3 bg-accent text-dark font-bold text-base px-9 py-5 rounded-full hover:scale-105 hover:shadow-[0_0_40px_rgba(204,251,85,0.5)] transition-all duration-300">
               Book a Discovery Call →
-            </a>
+            </button>
             <p className="text-white/20 text-xs mt-4">No pitch. No pressure. Just clarity.</p>
           </div>
         </motion.div>

@@ -23,6 +23,9 @@ const responses = [
   { label: 'You do not need more activity.', sub: 'You need system alignment. Every lever is pulling in a different direction.', cta: true },
 ]
 
+const CALENDLY_URL = 'https://calendly.com/akshay-yonkomedia/30min'
+const openCalendly = () => (window as any).Calendly?.initPopupWidget({ url: CALENDLY_URL })
+
 export default function ProblemChecklist() {
   const [checked, setChecked] = useState<boolean[]>(new Array(problems.length).fill(false))
   const toggle = (i: number) => setChecked(p => { const n = [...p]; n[i] = !n[i]; return n })
@@ -109,13 +112,13 @@ export default function ProblemChecklist() {
                 <p className="text-white/60 text-sm leading-relaxed max-w-lg">{res.sub}</p>
               </div>
               {res.cta && (
-                <motion.a
+                <motion.button
                   initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}
-                  href="#contact"
+                  onClick={openCalendly}
                   className="flex-shrink-0 self-center inline-flex items-center gap-2 bg-accent text-dark font-bold text-sm px-6 py-3 rounded-full hover:scale-105 hover:shadow-[0_0_20px_rgba(204,251,85,0.4)] transition-all duration-200"
                 >
                   Let&apos;s fix the levers →
-                </motion.a>
+                </motion.button>
               )}
             </div>
           </motion.div>

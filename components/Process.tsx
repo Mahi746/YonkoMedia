@@ -3,6 +3,9 @@
 import { motion } from 'framer-motion'
 import { AnimatedHeading, AnimatedTag } from './AnimatedText'
 
+const CALENDLY_URL = 'https://calendly.com/akshay-yonkomedia/30min'
+const openCalendly = () => (window as any).Calendly?.initPopupWidget({ url: CALENDLY_URL })
+
 const phases = [
   {
     num: 'Phase 1',
@@ -142,10 +145,10 @@ export default function Process() {
             <span className="text-white font-semibold">Everything starts working together.</span>{' '}
             Not in silos.
           </p>
-          <a href="#contact"
+          <button onClick={openCalendly}
             className="flex-shrink-0 inline-flex items-center gap-2 bg-accent text-dark font-bold text-sm px-6 py-3 rounded-full hover:scale-105 hover:shadow-[0_0_20px_rgba(204,251,85,0.4)] transition-all duration-200">
             Start with a diagnosis →
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>

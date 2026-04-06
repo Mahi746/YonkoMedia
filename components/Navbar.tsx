@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const links = ['Work', 'Results', 'Process', 'FAQ']
+const CALENDLY_URL = 'https://calendly.com/akshay-yonkomedia/30min'
+const openCalendly = () => (window as any).Calendly?.initPopupWidget({ url: CALENDLY_URL })
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -48,12 +50,12 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="flex items-center gap-4">
-            <a
-              href="#contact"
+            <button
+              onClick={openCalendly}
               className="hidden md:inline-flex bg-accent text-dark font-semibold text-sm px-5 py-2.5 rounded-full hover:scale-105 hover:shadow-[0_0_20px_rgba(204,251,85,0.4)] transition-all duration-200"
             >
               Start Growing →
-            </a>
+            </button>
 
             {/* Mobile hamburger */}
             <button
@@ -89,13 +91,12 @@ export default function Navbar() {
                 {item}
               </a>
             ))}
-            <a
-              href="#contact"
-              onClick={() => setMenuOpen(false)}
+            <button
+              onClick={() => { openCalendly(); setMenuOpen(false) }}
               className="mt-2 inline-flex bg-accent text-dark font-semibold text-sm px-5 py-3 rounded-full justify-center"
             >
               Start Growing →
-            </a>
+            </button>
           </motion.div>
         )}
       </AnimatePresence>
