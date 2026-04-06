@@ -3,6 +3,8 @@ import { Space_Grotesk } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 
+const GA_ID = 'G-GB8TQ4Y7FJ'
+
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-space-grotesk',
@@ -34,6 +36,13 @@ export default function RootLayout({
       <body className="bg-dark text-white antialiased overflow-x-hidden font-sans">
         {children}
         <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_ID}');
+        `}</Script>
       </body>
     </html>
   )
