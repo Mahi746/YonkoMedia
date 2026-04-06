@@ -33,7 +33,7 @@ export default function ProblemChecklist() {
   const res = responses[count]
 
   return (
-    <section className="py-28 px-6 bg-dark">
+    <section className="py-16 md:py-28 px-5 md:px-6 bg-dark">
       <div className="max-w-5xl mx-auto">
 
         <div className="mb-14">

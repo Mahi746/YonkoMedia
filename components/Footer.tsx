@@ -7,7 +7,7 @@ const openCalendly = () => (window as any).Calendly?.initPopupWidget({ url: CALE
 
 export default function Footer() {
   return (
-    <footer id="contact" className="border-t border-white/5 px-6 py-20 bg-dark">
+    <footer id="contact" className="border-t border-white/5 px-5 md:px-6 py-14 md:py-20 bg-dark">
       <div className="max-w-7xl mx-auto">
 
         {/* CTA block */}

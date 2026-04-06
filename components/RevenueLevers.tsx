@@ -133,10 +133,10 @@ export default function RevenueLevers() {
   const lever = levers[active]
 
   return (
-    <section className="py-28 px-6 bg-dark">
+    <section className="py-16 md:py-28 px-5 md:px-6 bg-dark">
       <div className="max-w-6xl mx-auto">
 
-        <div className="mb-14">
+        <div className="mb-10 md:mb-14">
           <AnimatedTag text="The Framework" delay={0}
             className="inline-flex text-xs font-semibold uppercase tracking-widest text-accent bg-accent/10 border border-accent/20 px-3 py-1.5 rounded-full mb-6" />
           <AnimatedHeading
@@ -146,26 +146,27 @@ export default function RevenueLevers() {
           />
         </div>
 
-        {/* Tab row */}
+        {/* Unified tab + content box */}
         <motion.div
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex border border-white/10 rounded-2xl overflow-x-auto scrollbar-none mb-1 bg-white/[0.02]"
+          className="border border-white/10 rounded-2xl overflow-hidden bg-white/[0.02]"
         >
-          {levers.map((l, i) => (
-            <button key={l.label} onClick={() => setActive(i)}
-              className={`flex-shrink-0 flex-1 min-w-[90px] flex items-center justify-center gap-2 px-4 py-4 font-display font-bold transition-all duration-200 relative ${
-                active === i ? 'bg-accent text-dark' : 'text-white/40 hover:text-white/70'
-              } ${i > 0 ? 'border-l border-white/8' : ''}`}
-            >
-              <span className={`text-xs ${active === i ? 'text-dark/50' : 'text-white/20'}`}>{l.num}</span>
-              <span className="uppercase tracking-wider text-xs">{l.label}</span>
-            </button>
-          ))}
-        </motion.div>
+          {/* Tab row */}
+          <div className="flex overflow-x-auto scrollbar-none border-b border-white/10">
+            {levers.map((l, i) => (
+              <button key={l.label} onClick={() => setActive(i)}
+                className={`flex-shrink-0 flex-1 min-w-[110px] flex items-center justify-center gap-2.5 px-5 py-4 font-display font-bold transition-all duration-200 ${
+                  active === i ? 'bg-accent text-dark' : 'text-white/40 hover:text-white/70'
+                } ${i > 0 ? 'border-l border-white/10' : ''}`}
+              >
+                <span className={`text-[11px] font-medium ${active === i ? 'text-dark/50' : 'text-white/20'}`}>{l.num}</span>
+                <span className="uppercase tracking-wider text-xs font-bold">{l.label}</span>
+              </button>
+            ))}
+          </div>
 
-        {/* Tab content */}
-        <div className="border border-white/8 rounded-b-2xl overflow-hidden bg-white/[0.02]">
+          {/* Tab content */}
           <AnimatePresence mode="wait">
             <motion.div key={active}
               initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
@@ -173,7 +174,7 @@ export default function RevenueLevers() {
               className="grid grid-cols-1 lg:grid-cols-2 min-h-[400px]"
             >
               {/* Left text */}
-              <div className="p-10 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/8">
+              <div className="p-7 md:p-10 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/8">
                 <div className="text-accent/60 text-xs font-bold uppercase tracking-widest mb-4">
                   {lever.num} / {lever.label}
                 </div>
@@ -201,12 +202,12 @@ export default function RevenueLevers() {
               </div>
 
               {/* Right visual */}
-              <div className="p-10 flex flex-col justify-center">
+              <div className="p-7 md:p-10 flex flex-col justify-center">
                 {lever.visual}
               </div>
             </motion.div>
           </AnimatePresence>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
