@@ -150,17 +150,16 @@ export default function RevenueLevers() {
         <motion.div
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex border border-white/10 rounded-2xl overflow-hidden mb-1 bg-white/[0.02]"
+          className="flex border border-white/10 rounded-2xl overflow-x-auto scrollbar-none mb-1 bg-white/[0.02]"
         >
           {levers.map((l, i) => (
             <button key={l.label} onClick={() => setActive(i)}
-              className={`flex-1 flex items-center justify-center gap-2 px-4 py-4 font-display font-bold transition-all duration-200 relative ${
+              className={`flex-shrink-0 flex-1 min-w-[90px] flex items-center justify-center gap-2 px-4 py-4 font-display font-bold transition-all duration-200 relative ${
                 active === i ? 'bg-accent text-dark' : 'text-white/40 hover:text-white/70'
               } ${i > 0 ? 'border-l border-white/8' : ''}`}
             >
               <span className={`text-xs ${active === i ? 'text-dark/50' : 'text-white/20'}`}>{l.num}</span>
-              <span className="uppercase tracking-wider text-xs hidden sm:inline">{l.label}</span>
-              <span className="uppercase tracking-wider text-xs sm:hidden">{l.label.slice(0, 4)}</span>
+              <span className="uppercase tracking-wider text-xs">{l.label}</span>
             </button>
           ))}
         </motion.div>

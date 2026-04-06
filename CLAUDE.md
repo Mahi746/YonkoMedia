@@ -9,17 +9,23 @@
 
 | Field | Value |
 |---|---|
-| Project | Yonkomedia — Growth Studio website |
+| Project | Yonkomedia — Fractional CMO Studio website |
 | Type | Agency/marketing homepage (single page) |
 | Reference | fletchpmm.com (layout flow inspiration) |
 | Local URL | http://localhost:3000 |
 | Directory | `d:/Claude-Code/my-app` |
+| Live URL | https://yonkomedia.com (Vercel) |
 
 **Start server:**
 ```bash
 export PATH="/c/Program Files/nodejs:$PATH" && cd d:/Claude-Code/my-app && npm run dev
 ```
 Node.js is installed at `C:\Program Files\nodejs\` — not in bash PATH by default, must export manually.
+
+**Deploy:** Push to `origin` (Yonko repo) → Vercel auto-deploys.
+```bash
+git add . && git commit -m "message" && git push origin master
+```
 
 ---
 
@@ -61,10 +67,11 @@ Node.js is installed at `C:\Program Files\nodejs\` — not in bash PATH by defau
 - **Tailwind config:** both `sans` and `display` families point to `var(--font-space-grotesk)` as backup
 
 ### Design Principles
-- Always dark theme (`#010101` bg). Never introduce light mode unless explicitly asked.
+- **Full dark theme throughout** — all sections use `bg-dark` (`#010101`). No light sections.
 - Lime (`#CCFB55`) is used for: CTAs, gradient text, highlighted words, borders on hover, icons/bullets, glow effects
 - Premium, modern, bold — no generic agency clichés
 - Every section entry animation: Framer Motion `whileInView` + `viewport={{ once: true }}`
+- Word-by-word heading reveals via `AnimatedHeading` component (outcrowd.io style)
 
 ---
 
@@ -78,26 +85,30 @@ d:/Claude-Code/my-app/
 ├── tailwind.config.ts             ← custom colors, fonts, all keyframes
 ├── postcss.config.mjs
 ├── tsconfig.json
+├── public/
+│   └── logo.svg                   ← wordmark SVG (yonko white + media lime)
 ├── lib/
 │   └── utils.ts                   ← cn() utility
 ├── app/
-│   ├── layout.tsx                 ← Space Grotesk via next/font, metadata
+│   ├── layout.tsx                 ← Space Grotesk via next/font, GA4, Clarity, Calendly CSS, favicon
+│   ├── icon.svg                   ← favicon (ym monogram, dark bg + lime)
 │   ├── globals.css                ← @import font, base styles, keyframes
 │   └── page.tsx                   ← imports all section components
 └── components/
     ├── ui/
     │   └── border-beam.tsx        ← shadcn BorderBeam component
+    ├── AnimatedText.tsx           ← AnimatedHeading, AnimatedP, AnimatedTag
+    ├── CalendlyFloat.tsx          ← floating "Book a free call" button (scroll-triggered)
     ├── Navbar.tsx
     ├── Hero.tsx
     ├── GridBackground.tsx
     ├── LogoMarquee.tsx
-    ├── Services.tsx
-    ├── Testimonials.tsx
     ├── ProblemChecklist.tsx
-    ├── Deliverables.tsx
+    ├── RevenueLevers.tsx
+    ├── BeforeAfter.tsx
     ├── Process.tsx
+    ├── CaseStudies.tsx
     ├── FAQ.tsx
-    ├── MoreTestimonials.tsx
     └── Footer.tsx
 ```
 
@@ -105,22 +116,23 @@ d:/Claude-Code/my-app/
 
 ## 5. Page Sections (order is fixed)
 
-**Dark/light alternation:** Hero→dark, LogoMarquee→dark, ProblemChecklist→white, RevenueLevers→#F6F6F4, BeforeAfter→dark, Process→white, CaseStudies→dark, FAQ→#F6F6F4, Footer→dark
+**All sections are full dark (`bg-dark` / `#010101`).**
 
-| # | Component | bg | Description |
-|---|---|---|---|
-| 1 | `Navbar` | transparent/dark | Fixed, blurs on scroll, mobile hamburger |
-| 2 | `Hero` | `#010101` | Centered, GridBackground, 4 real-metric floater cards (xl only), formula IP block, 2 CTAs |
-| 3 | `LogoMarquee` | `#010101` | CSS infinite scroll |
-| 4 | `ProblemChecklist` | `#FFFFFF` | 6 checks, dynamic response (0/1-2/3-4/5-6), CTA at 3+ |
-| 5 | `RevenueLevers` | `#F6F6F4` | 4 tabs (Traffic/Conversion/Retention/Pricing), Valubyl-style tab bar, left text + right CSS visual |
-| 6 | `BeforeAfter` | `#010101` | 4 dark cards with before→after transformation per lever, SVG icons |
-| 7 | `Process` | `#FFFFFF` | 2-column Phase 1 (Week 1-2) + Phase 2 (Week 3+), phase pill headers |
-| 8 | `CaseStudies` | `#010101` | 3 cards, Apple-style + icon, hover expands + rotates to ×, click opens AnimatePresence modal |
-| 9 | `FAQ` | `#F6F6F4` | 6 questions, accordion, dark bg on open state |
-| 10 | `Footer` | `#010101` | CTA block, formula in footer tagline |
+| # | Component | Description |
+|---|---|---|
+| 1 | `Navbar` | Fixed, blurs on scroll, mobile hamburger. CTA → Calendly popup |
+| 2 | `Hero` | GridBackground beam, 4 floater cards (xl only), formula IP block, 2 CTAs. Primary CTA → Calendly |
+| 3 | `LogoMarquee` | CSS infinite scroll marquee |
+| 4 | `ProblemChecklist` | 2-col grid, 6 checks, dynamic response (0/1-2/3-4/5-6), CTA at 3+ → Calendly |
+| 5 | `RevenueLevers` | 4 tabs (Traffic/Conversion/Retention/Pricing), horizontally scrollable on mobile, left text + right CSS visual |
+| 6 | `BeforeAfter` | 4 cards, before→after per lever, SVG icons, hover lime glow |
+| 7 | `Process` | id="how-it-works", 2-col Phase 1 (Week 1-2) + Phase 2 (Week 3+), CTA → Calendly |
+| 8 | `CaseStudies` | 3 cards, hover expand + icon rotation, AnimatePresence modal with metrics. Modal CTA → Calendly |
+| 9 | `FAQ` | id="faq", 6 accordion items, open state = accent border |
+| 10 | `Footer` | id="contact", CTA block → Calendly, social links, formula tagline |
+| — | `CalendlyFloat` | Fixed bottom-right, only visible after scrolling 60% past hero height |
 
-**Removed components:** `Services.tsx`, `Testimonials.tsx`, `Deliverables.tsx`, `MoreTestimonials.tsx` (no longer imported)
+**Removed components (no longer imported):** `Services.tsx`, `Testimonials.tsx`, `Deliverables.tsx`, `MoreTestimonials.tsx`
 
 ## 5b. Brand Copy & IP
 
@@ -139,16 +151,32 @@ d:/Claude-Code/my-app/
 
 ## 6. Key Component Details
 
+### AnimatedText (`components/AnimatedText.tsx`)
+- `AnimatedHeading` — word-by-word reveal with staggered Framer Motion, `whileInView`
+- `AnimatedTag` — fade+scale reveal for section overline pills
+- `AnimatedP` — fade-up for body paragraphs
+- Used in: Navbar, Hero, ProblemChecklist, RevenueLevers, BeforeAfter, Process, CaseStudies
+
+### Calendly Integration
+- **URL:** `https://calendly.com/akshay-yonkomedia/30min`
+- **How it works:** Calendly CSS loaded in `<head>`, JS via `<Script strategy="lazyOnload">` in layout.tsx
+- **Pattern used in every CTA component:**
+  ```ts
+  const CALENDLY_URL = 'https://calendly.com/akshay-yonkomedia/30min'
+  const openCalendly = () => (window as any).Calendly?.initPopupWidget({ url: CALENDLY_URL })
+  ```
+- **All CTAs converted from `<a href="#contact">` to `<button onClick={openCalendly}>`**
+- **FloatingButton:** shows only after `window.scrollY > window.innerHeight * 0.6` to avoid overlapping hero CTAs
+
 ### GridBackground (`components/GridBackground.tsx`)
 - **Approach:** Pure CSS `div` elements — NOT canvas
 - **Why not canvas:** Canvas `clearRect` + transparent gradient stops caused a dark premultiplied-alpha halo around glow strokes. Switching to CSS divs on an `#010101` background eliminated the issue.
 - **Grid:** CSS `backgroundImage` with 64px cell size, `rgba(255,255,255,0.04)` line color
 - **Beam:** ONE cursor-reactive horizontal beam
-  - Snaps to nearest horizontal grid line (multiples of 64px)
+  - Uses `closest('section')` to find hero section (critical — parentElement got pointer-events-none wrapper)
   - Smooth lerp: factor `0.1` per rAF frame (~60fps), trails cursor naturally
-  - Fades in/out: alpha lerp `0.07` on hero enter/leave
-  - Size: 200px total (HALF_LEN = 100px)
-  - Layers: soft bloom (blurred 17px div) + sharp 1px core with `box-shadow` glow
+  - Fades in/out: alpha lerp on hero enter/leave
+  - Layers: soft bloom + sharp 1px core with `box-shadow` glow
 - **Critical rule:** Gradient transparent stops use `rgba(204,251,85,0)` — NEVER the CSS keyword `transparent`. `transparent` interpolates through black and creates a dark fringe.
 
 ### BorderBeam (`components/ui/border-beam.tsx`)
@@ -163,6 +191,14 @@ d:/Claude-Code/my-app/
 | `border-beam` | BorderBeam component on cards |
 | `h-beam` / `v-beam` | CSS beam animations (available, not currently active) |
 
+### Logo & Favicon
+- **Logo SVG:** `public/logo.svg` — "yonko" (white) + "media" (lime), Space Grotesk Bold, transparent bg
+- **Favicon:** `app/icon.svg` — 32×32, dark rounded square, "y" white + "m" lime monogram
+
+### Analytics (in `app/layout.tsx`)
+- **Google Analytics 4:** `G-GB8TQ4Y7FJ` — `strategy="afterInteractive"`
+- **Microsoft Clarity:** `w7misv1bx6` — `strategy="afterInteractive"`
+
 ---
 
 ## 7. Known Issues & Fixes Applied
@@ -173,10 +209,26 @@ d:/Claude-Code/my-app/
 | Dark halo on glow strokes | Canvas premultiplied alpha with `transparent` keyword | Switched to CSS divs + `rgba(r,g,b,0)` |
 | `autoprefixer` build error | Package was in devDependencies, missing at runtime | Moved to `dependencies` via `npm install autoprefixer` |
 | Node.js not in bash PATH | Windows install not added to Git Bash PATH | Must run `export PATH="/c/Program Files/nodejs:$PATH"` before npm commands |
+| GridBackground beam not appearing | `parentElement` got pointer-events-none wrapper | Changed to `closest('section')` |
+| Calendly not working on live site | Pushed to wrong repo (YonkoMedia vs Yonko) | Always use `git push origin master` — origin = Yonko (Vercel-connected) |
+| Floating button overlapping hero CTAs on mobile | Fixed position at bottom of viewport coincided with hero CTAs | Float button now scroll-triggered: only appears after 60% of hero height scrolled |
+| RevenueLevers tabs cut off on mobile | `overflow-hidden` on flex container + `flex-1` shrinking labels | Changed to `overflow-x-auto` + `min-w-[90px]` per tab, full labels always shown |
 
 ---
 
-## 8. Coding Rules (always follow)
+## 8. Git & Deployment
+
+| Remote | Repo | Purpose |
+|---|---|---|
+| `origin` | https://github.com/Mahi746/Yonko | **Vercel-connected — always push here** |
+| `yonkomedia` | https://github.com/Mahi746/YonkoMedia | Secondary backup |
+
+- Git user: Mahipal / mahijat746@gmail.com
+- **Always push to `origin master`** — Vercel only watches Yonko
+
+---
+
+## 9. Coding Rules (always follow)
 
 - Never add light mode, never change the color palette without being asked
 - Never switch fonts without explicit instruction
@@ -186,14 +238,14 @@ d:/Claude-Code/my-app/
 - shadcn components go in `components/ui/`, page sections go in `components/`
 - Keep all section components as separate files — do not merge into `page.tsx`
 - Client components need `'use client'` only if they use hooks, state, or browser APIs
+- All CTAs use `openCalendly()` — never `href="#contact"` or `href="mailto:..."`
+- Always push to `origin master` for live deployment
 
 ---
 
-## 9. Roadmap / What's Next
+## 10. Roadmap / What's Next
 
-Discussed but not yet built:
-- [ ] More animation references to implement (user is doing mix-and-match)
+- [ ] Section-by-section mobile responsiveness audit (in progress)
+- [ ] Copy refinement per section
 - [ ] Additional pages beyond homepage
-- [ ] Mobile responsiveness audit
-- [ ] Real content / copy refinement
-- [ ] Deployment (Vercel)
+- [ ] Custom domain email setup
