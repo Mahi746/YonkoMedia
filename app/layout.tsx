@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   title: 'Yonkomedia — Growth Studio',
   description:
     'We make ambitious companies grow faster. Strategy, execution, and results — all under one roof.',
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+  },
   openGraph: {
     title: 'Yonkomedia — Growth Studio',
     description: 'Growth strategy, execution, and results for ambitious brands.',
