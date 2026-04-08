@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396">
+  <defs>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#CCFB55" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#010101" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gridMask" cx="50%" cy="50%" r="55%">
+      <stop offset="15%" stop-color="white" stop-opacity="1"/>
+      <stop offset="80%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="gridFade">
+      <rect width="1584" height="396" fill="url(#gridMask)"/>
+    </mask>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CCFB55"/>
+      <stop offset="100%" stop-color="#a8d63a"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CCFB55"/>
+      <stop offset="100%" stop-color="#a8d63a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1584" height="396" fill="#010101"/>
+
+  <!-- Grid pattern -->
+  <g mask="url(#gridFade)" opacity="0.45">
+    <!-- Vertical lines every 64px -->
+    <line x1="64" y1="0" x2="64" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="128" y1="0" x2="128" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="192" y1="0" x2="192" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="256" y1="0" x2="256" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="320" y1="0" x2="320" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="384" y1="0" x2="384" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="448" y1="0" x2="448" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="512" y1="0" x2="512" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="576" y1="0" x2="576" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="640" y1="0" x2="640" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="704" y1="0" x2="704" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="768" y1="0" x2="768" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="832" y1="0" x2="832" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="896" y1="0" x2="896" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="960" y1="0" x2="960" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="1024" y1="0" x2="1024" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="1088" y1="0" x2="1088" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="1152" y1="0" x2="1152" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="1216" y1="0" x2="1216" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="1280" y1="0" x2="1280" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="1344" y1="0" x2="1344" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="1408" y1="0" x2="1408" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="1472" y1="0" x2="1472" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="1536" y1="0" x2="1536" y2="396" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <!-- Horizontal lines every 64px -->
+    <line x1="0" y1="64" x2="1584" y2="64" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="0" y1="128" x2="1584" y2="128" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="0" y1="192" x2="1584" y2="192" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="0" y1="256" x2="1584" y2="256" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="0" y1="320" x2="1584" y2="320" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+    <line x1="0" y1="384" x2="1584" y2="384" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  </g>
+
+  <!-- Center glow -->
+  <rect width="1584" height="396" fill="url(#centerGlow)"/>
+
+  <!-- Accent line top -->
+  <rect x="0" y="0" width="1584" height="2" fill="url(#accentGrad)" opacity="0.6"/>
+
+  <!-- Logo: yonko (white) + media (lime) -->
+  <text x="120" y="178" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="62" fill="white" letter-spacing="-1">yonko</text>
+  <text x="342" y="178" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="62" fill="#CCFB55" letter-spacing="-1">media</text>
+
+  <!-- Divider line -->
+  <rect x="120" y="196" width="360" height="1.5" fill="rgba(255,255,255,0.08)" rx="1"/>
+
+  <!-- Tagline -->
+  <text x="120" y="230" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="500" font-size="16" fill="rgba(255,255,255,0.35)" letter-spacing="3">FRACTIONAL CMO  ·  GROWTH SYSTEMS  ·  PERFORMANCE</text>
+
+  <!-- Formula block — right side -->
+  <!-- Box -->
+  <rect x="860" y="132" width="604" height="132" rx="20" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Formula label -->
+  <text x="896" y="174" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="500" font-size="13" fill="rgba(255,255,255,0.3)" letter-spacing="2">REVENUE FORMULA</text>
+
+  <!-- Revenue = -->
+  <text x="896" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="500" font-size="18" fill="rgba(255,255,255,0.35)">Revenue =</text>
+
+  <!-- Traffic -->
+  <text x="1018" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="18" fill="#CCFB55">Traffic</text>
+  <text x="1090" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="18" fill="rgba(255,255,255,0.2)"> × </text>
+  <!-- Conversion -->
+  <text x="1118" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="18" fill="#CCFB55">Conversion</text>
+  <text x="1238" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="18" fill="rgba(255,255,255,0.2)"> × </text>
+  <!-- Retention -->
+  <text x="1266" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="18" fill="#CCFB55">Retention</text>
+  <text x="1376" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="18" fill="rgba(255,255,255,0.2)"> × </text>
+  <!-- Pricing -->
+  <text x="1404" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="18" fill="#CCFB55">Pricing</text>
+
+  <!-- Proof metrics -->
+  <g>
+    <!-- Metric 1 -->
+    <text x="120" y="286" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="26" fill="#CCFB55">$1.3M</text>
+    <text x="120" y="308" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="12" fill="rgba(255,255,255,0.3)" letter-spacing="1">REVENUE DRIVEN</text>
+    <!-- Divider -->
+    <rect x="216" y="278" width="1" height="38" fill="rgba(255,255,255,0.1)"/>
+    <!-- Metric 2 -->
+    <text x="236" y="286" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="26" fill="#CCFB55">11×</text>
+    <text x="236" y="308" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="12" fill="rgba(255,255,255,0.3)" letter-spacing="1">BLENDED ROAS</text>
+    <!-- Divider -->
+    <rect x="312" y="278" width="1" height="38" fill="rgba(255,255,255,0.1)"/>
+    <!-- Metric 3 -->
+    <text x="332" y="286" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="26" fill="#CCFB55">670K+</text>
+    <text x="332" y="308" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="12" fill="rgba(255,255,255,0.3)" letter-spacing="1">SOCIAL REACH</text>
+    <!-- Divider -->
+    <rect x="444" y="278" width="1" height="38" fill="rgba(255,255,255,0.1)"/>
+    <!-- Metric 4 -->
+    <text x="464" y="286" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="26" fill="#CCFB55">2×</text>
+    <text x="464" y="308" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="12" fill="rgba(255,255,255,0.3)" letter-spacing="1">DIRECT BOOKINGS</text>
+  </g>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="394" width="1584" height="2" fill="url(#accentGrad)" opacity="0.4"/>
+</svg>

@@ -3,9 +3,14 @@
 import { motion } from 'framer-motion'
 
 const logos = [
-  'Stripe', 'Notion', 'Linear', 'Vercel', 'Loom',
-  'Intercom', 'Webflow', 'Figma', 'Airtable', 'Framer',
-  'Superhuman', 'Coda', 'Retool', 'Amplitude', 'Mixpanel',
+  'The Hosteller',
+  'Moggs Estates',
+  'Bajaj Finserv',
+  'Microsoft',
+  'CoLLearn',
+  'Jadecaps',
+  'Tesu India',
+  'Walk Of Elegance',
 ]
 
 // Duplicate for seamless loop
@@ -41,10 +46,11 @@ export default function LogoMarquee() {
 
 function LogoItem({ name }: { name: string }) {
   return (
-    <div className="inline-flex items-center mx-10">
-      <span className="font-display font-bold text-lg text-white/15 hover:text-white/40 transition-colors duration-300 select-none cursor-default tracking-tight">
+    <div className="inline-flex items-center gap-8 mx-8">
+      <span className="font-display font-semibold text-base text-white/20 hover:text-white/45 transition-colors duration-300 select-none cursor-default tracking-tight whitespace-nowrap">
         {name}
       </span>
+      <span className="w-1 h-1 rounded-full bg-white/10 flex-shrink-0" />
     </div>
   )
 }

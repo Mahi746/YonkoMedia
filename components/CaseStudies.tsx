@@ -51,7 +51,7 @@ export default function CaseStudies() {
   const [modal, setModal] = useState<typeof cases[0] | null>(null)
 
   return (
-    <section className="py-16 md:py-28 px-5 md:px-6 bg-dark">
+    <section className="py-10 md:py-24 px-5 md:px-6 bg-dark">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
@@ -169,9 +169,9 @@ export default function CaseStudies() {
               <p className="text-white/50 text-sm leading-relaxed mb-8">{modal.teaser}</p>
 
               {/* Metrics */}
-              <div className="grid grid-cols-2 gap-4 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {[modal.metric1, modal.metric2].map((m) => (
-                  <div key={m.label} className="bg-white/[0.04] border border-white/8 rounded-2xl p-5">
+                  <div key={m.label} className="bg-white/[0.04] border border-white/8 rounded-2xl p-6">
                     <div className="text-white/30 text-xs mb-2">{m.label}</div>
                     {m.from ? (
                       <div className="flex items-center gap-2">

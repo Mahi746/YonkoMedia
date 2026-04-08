@@ -133,7 +133,7 @@ export default function RevenueLevers() {
   const lever = levers[active]
 
   return (
-    <section className="py-16 md:py-28 px-5 md:px-6 bg-dark">
+    <section className="py-10 md:py-24 px-5 md:px-6 bg-dark">
       <div className="max-w-6xl mx-auto">
 
         <div className="mb-10 md:mb-14">
@@ -156,11 +156,11 @@ export default function RevenueLevers() {
           <div className="flex overflow-x-auto scrollbar-none border-b border-white/10">
             {levers.map((l, i) => (
               <button key={l.label} onClick={() => setActive(i)}
-                className={`flex-shrink-0 flex-1 min-w-[110px] flex items-center justify-center gap-2.5 px-5 py-4 font-display font-bold transition-all duration-200 ${
+                className={`flex-shrink-0 flex-1 min-w-[100px] flex items-center justify-center gap-2 px-4 py-3.5 font-display font-bold transition-all duration-200 ${
                   active === i ? 'bg-accent text-dark' : 'text-white/40 hover:text-white/70'
                 } ${i > 0 ? 'border-l border-white/10' : ''}`}
               >
-                <span className={`text-[11px] font-medium ${active === i ? 'text-dark/50' : 'text-white/20'}`}>{l.num}</span>
+                <span className={`text-[10px] font-medium ${active === i ? 'text-dark/50' : 'text-white/20'}`}>{l.num}</span>
                 <span className="uppercase tracking-wider text-xs font-bold">{l.label}</span>
               </button>
             ))}

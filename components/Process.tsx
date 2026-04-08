@@ -45,7 +45,7 @@ const phases = [
 
 export default function Process() {
   return (
-    <section id="how-it-works" className="py-16 md:py-28 px-5 md:px-6 bg-dark">
+    <section id="how-it-works" className="py-10 md:py-24 px-5 md:px-6 bg-dark">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
@@ -105,9 +105,9 @@ export default function Process() {
                 <motion.div
                   initial={{ width: 0 }} whileInView={{ width: '33.33%' }}
                   viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-                  className="relative h-9 rounded-lg bg-accent flex items-center px-3 overflow-hidden"
+                  className="relative h-9 rounded-lg bg-accent flex items-center px-3 min-w-[80px] overflow-visible"
                 >
-                  <span className="text-dark font-bold text-xs whitespace-nowrap">Diagnosis + Alignment</span>
+                  <span className="text-dark font-bold text-xs whitespace-nowrap">Diagnosis</span>
                 </motion.div>
               </div>
             </div>
@@ -130,9 +130,9 @@ export default function Process() {
                   initial={{ width: 0 }} whileInView={{ width: '66.66%' }}
                   viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
                   style={{ marginLeft: '33.33%' }}
-                  className="relative h-9 rounded-lg bg-white/[0.12] border border-white/10 flex items-center px-3 overflow-hidden"
+                  className="relative h-9 rounded-lg bg-white/[0.12] border border-white/10 flex items-center px-3 overflow-visible"
                 >
-                  <span className="text-white/70 font-bold text-xs whitespace-nowrap">Execution + Growth</span>
+                  <span className="text-white/70 font-bold text-xs whitespace-nowrap relative z-10">Execution</span>
                   <div className="absolute inset-0 rounded-lg"
                     style={{ background: 'linear-gradient(90deg, rgba(204,251,85,0.08) 0%, transparent 60%)' }} />
                 </motion.div>
