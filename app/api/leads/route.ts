@@ -10,24 +10,20 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Not configured' }, { status: 500 })
     }
 
-    const payload = {
+    const params = new URLSearchParams({
       timestamp: new Date().toISOString(),
       name: body.name || '',
       company: body.company || '',
       website: body.website || '',
       challenge: Array.isArray(body.challenge) ? body.challenge.join(', ') : '',
-      revenue: body.revenue || '',
       budget: body.budget || '',
       timeline: body.timeline || '',
       email: body.email || '',
       phone: body.phone || '',
-    }
+    })
 
-    const response = await fetch(webhookUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-      redirect: 'follow',
+    const response = await fetch(`${webhookUrl}?${params.toString()}`, {
+      method: 'GET',
     })
 
     if (!response.ok) {
