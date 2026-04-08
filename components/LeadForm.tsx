@@ -53,8 +53,8 @@ const STEPS: StepDef[] = [
   },
   {
     id: 'budget',
-    question: 'What is your monthly marketing budget?',
-    subtext: 'Helps us match you with the right scope.',
+    question: 'What is your rough monthly budget for this?',
+    subtext: 'No wrong answer — helps us scope the right engagement for you.',
     type: 'select',
     options: ['Under $2K', '$2K–$5K', '$5K–$10K', '$10K+'],
   },
