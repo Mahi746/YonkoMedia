@@ -13,17 +13,30 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'Yonkomedia — Growth Studio',
+  metadataBase: new URL('https://yonkomedia.com'),
+  title: 'Yonkomedia — Fractional CMO Studio',
   description:
-    'We make ambitious companies grow faster. Strategy, execution, and results — all under one roof.',
+    'Fractional CMO studio for ambitious brands. We fix the levers limiting your growth — Traffic, Conversion, Retention, Pricing — and build systems that compound.',
+  keywords: ['fractional CMO', 'growth marketing', 'revenue growth', 'marketing strategy', 'CMO for hire', 'growth systems', 'performance marketing'],
   icons: {
     icon: '/icon.svg',
     shortcut: '/icon.svg',
   },
   openGraph: {
-    title: 'Yonkomedia — Growth Studio',
-    description: 'Growth strategy, execution, and results for ambitious brands.',
+    title: 'Yonkomedia — Fractional CMO Studio',
+    description: 'We fix the levers limiting your growth. Traffic × Conversion × Retention × Pricing.',
     type: 'website',
+    url: 'https://yonkomedia.com',
+    siteName: 'Yonkomedia',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Yonkomedia — Fractional CMO Studio',
+    description: 'We fix the levers limiting your growth. Traffic × Conversion × Retention × Pricing.',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 
