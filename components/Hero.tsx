@@ -77,7 +77,9 @@ export default function Hero() {
 
         {/* Sub */}
         <motion.p {...fadeUp(0.3)} className="text-white/50 text-base sm:text-lg max-w-lg leading-relaxed mb-6 px-2">
-          We work as a fractional CMO to fix the four levers that actually drive revenue.
+          We work as a fractional CMO to fix the{' '}
+          <span className="text-accent underline decoration-accent/50 underline-offset-3">four levers</span>
+          {' '}that actually drive revenue.
         </motion.p>
 
         {/* Formula — the IP */}
