@@ -89,15 +89,17 @@ export default function GridBackground() {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
 
-      {/* Faint grid */}
+      {/* Grid — visible at centre, fades to edges */}
       <div
         className="absolute inset-0"
         style={{
           backgroundImage: [
-            'linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px)',
-            'linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)',
+            'linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px)',
+            'linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px)',
           ].join(', '),
           backgroundSize: `${GRID}px ${GRID}px`,
+          WebkitMaskImage: 'radial-gradient(ellipse 70% 65% at 50% 45%, black 20%, transparent 78%)',
+          maskImage: 'radial-gradient(ellipse 70% 65% at 50% 45%, black 20%, transparent 78%)',
         }}
       />
 

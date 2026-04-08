@@ -147,11 +147,13 @@ export default function CaseStudies() {
               onClick={() => setModal(null)}
               className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50" />
 
+            {/* Centered wrapper */}
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none">
             {/* Panel */}
             <motion.div
-              initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }} transition={{ duration: 0.3 }}
-              className="fixed inset-x-4 md:inset-x-auto md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-2xl top-1/2 -translate-y-1/2 bg-[#111] border border-white/10 rounded-3xl p-8 z-50 max-h-[85vh] overflow-y-auto">
+              initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.96 }} transition={{ duration: 0.25 }}
+              className="pointer-events-auto w-full max-w-2xl bg-[#111] border border-white/10 rounded-3xl p-8 max-h-[85vh] overflow-y-auto">
 
               <div className="flex items-start justify-between mb-6">
                 <span className="text-accent/50 text-xs font-semibold uppercase tracking-widest">{modal.category}</span>
@@ -202,6 +204,7 @@ export default function CaseStudies() {
                 Get similar results →
               </button>
             </motion.div>
+            </div>
           </>
         )}
       </AnimatePresence>

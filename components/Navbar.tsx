@@ -35,13 +35,13 @@ export default function Navbar() {
             yonko<span className="text-accent">media</span>
           </a>
 
-          {/* Desktop links */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* Desktop links — pill capsule */}
+          <div className="hidden md:flex items-center gap-1 border border-white/10 bg-white/[0.04] backdrop-blur-sm rounded-full px-2 py-1.5">
             {links.map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="text-white/50 hover:text-white text-sm font-medium transition-colors duration-200"
+                className="text-white/55 hover:text-white text-sm font-medium px-4 py-1.5 rounded-full hover:bg-white/[0.07] transition-all duration-200"
               >
                 {item}
               </a>

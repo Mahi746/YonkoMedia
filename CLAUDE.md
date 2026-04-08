@@ -171,7 +171,8 @@ d:/Claude-Code/my-app/
 ### GridBackground (`components/GridBackground.tsx`)
 - **Approach:** Pure CSS `div` elements — NOT canvas
 - **Why not canvas:** Canvas `clearRect` + transparent gradient stops caused a dark premultiplied-alpha halo around glow strokes. Switching to CSS divs on an `#010101` background eliminated the issue.
-- **Grid:** CSS `backgroundImage` with 64px cell size, `rgba(255,255,255,0.04)` line color
+- **Grid:** CSS `backgroundImage` with 64px cell size, `rgba(255,255,255,0.08)` line color
+- **Grid visibility:** CSS `mask-image: radial-gradient(ellipse 70% 65% at 50% 45%, black 20%, transparent 78%)` — visible at center, fades to edges
 - **Beam:** ONE cursor-reactive horizontal beam
   - Uses `closest('section')` to find hero section (critical — parentElement got pointer-events-none wrapper)
   - Smooth lerp: factor `0.1` per rAF frame (~60fps), trails cursor naturally
@@ -190,6 +191,13 @@ d:/Claude-Code/my-app/
 | `marquee` / `marquee2` | LogoMarquee infinite scroll |
 | `border-beam` | BorderBeam component on cards |
 | `h-beam` / `v-beam` | CSS beam animations (available, not currently active) |
+
+### Navbar (`components/Navbar.tsx`)
+- **Desktop layout:** logo left, pill-capsule nav links center, CTA right
+- **Pill container:** `border border-white/10 bg-white/[0.04] backdrop-blur-sm rounded-full px-2 py-1.5`
+- **Individual links:** `px-4 py-1.5 rounded-full hover:bg-white/[0.07]` — hover highlights individual pill
+- **Scroll behaviour:** blurs background after 24px scroll (`bg-dark/90 backdrop-blur-md border-b border-white/5`)
+- **Hero heading size (settled):** `clamp(2.4rem,5.5vw,5.5rem)` with `leading-[1.02]` — CTAs visible on first load
 
 ### Logo & Favicon
 - **Logo SVG:** `public/logo.svg` — "yonko" (white) + "media" (lime), Space Grotesk Bold, transparent bg
@@ -213,6 +221,7 @@ d:/Claude-Code/my-app/
 | Calendly not working on live site | Pushed to wrong repo (YonkoMedia vs Yonko) | Always use `git push origin master` — origin = Yonko (Vercel-connected) |
 | Floating button overlapping hero CTAs on mobile | Fixed position at bottom of viewport coincided with hero CTAs | Float button now scroll-triggered: only appears after 60% of hero height scrolled |
 | RevenueLevers tabs cut off on mobile | `overflow-hidden` on flex container + `flex-1` shrinking labels | Changed to `overflow-x-auto` + `min-w-[90px]` per tab, full labels always shown |
+| CaseStudies modal off-center | Framer Motion `y: 40` initial conflicts with CSS `top-1/2 -translate-y-1/2` | Replaced with `fixed inset-0 flex items-center justify-center` wrapper + `scale` animation only on panel |
 
 ---
 

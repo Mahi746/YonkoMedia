@@ -63,13 +63,13 @@ export default function Hero() {
         <motion.div {...fadeUp(0.1)} className="mb-5">
           <span className="inline-flex items-center gap-2 border border-accent/30 bg-accent/8 text-accent text-xs font-semibold px-4 py-2 rounded-full uppercase tracking-widest">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-            Fractional CMO Studio
+            3 of 4 April spots taken
           </span>
         </motion.div>
 
         {/* Headline */}
         <motion.h1 {...fadeUp(0.2)}
-          className="font-display font-bold text-[clamp(2.8rem,7vw,6.5rem)] leading-[0.95] tracking-tight text-white mb-5">
+          className="font-display font-bold text-[clamp(2.4rem,5.5vw,5.5rem)] leading-[1.02] tracking-tight text-white mb-5">
           We make your growth
           <br />
           <span className="gradient-text">unstoppable.</span>
