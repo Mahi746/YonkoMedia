@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import LeadForm from './LeadForm'
 
 const links = ['Work', 'Results', 'Process', 'FAQ']
-const CALENDLY_URL = 'https://calendly.com/akshay-yonkomedia/30min'
-const openCalendly = () => (window as any).Calendly?.initPopupWidget({ url: CALENDLY_URL })
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [formOpen, setFormOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
@@ -51,7 +51,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="flex items-center gap-4">
             <button
-              onClick={openCalendly}
+              onClick={() => setFormOpen(true)}
               className="hidden md:inline-flex bg-accent text-dark font-semibold text-sm px-5 py-2.5 rounded-full hover:scale-105 hover:shadow-[0_0_20px_rgba(204,251,85,0.4)] transition-all duration-200"
             >
               Start Growing →
@@ -92,7 +92,7 @@ export default function Navbar() {
               </a>
             ))}
             <button
-              onClick={() => { openCalendly(); setMenuOpen(false) }}
+              onClick={() => { setFormOpen(true); setMenuOpen(false) }}
               className="mt-2 inline-flex bg-accent text-dark font-semibold text-sm px-5 py-3 rounded-full justify-center"
             >
               Start Growing →
@@ -100,6 +100,8 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <LeadForm isOpen={formOpen} onClose={() => setFormOpen(false)} />
     </>
   )
 }
