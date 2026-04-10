@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Space_Grotesk } from 'next/font/google'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 
 const GA_ID = 'G-GB8TQ4Y7FJ'
@@ -69,6 +70,7 @@ export default function RootLayout({
           })(window, document, "clarity", "script", "w7misv1bx6");
         `}</Script>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
