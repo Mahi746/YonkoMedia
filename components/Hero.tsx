@@ -63,7 +63,7 @@ export default function Hero() {
         <motion.div {...fadeUp(0.1)} className="mb-5">
           <span className="inline-flex items-center gap-2 border border-accent/30 bg-accent/8 text-accent text-xs font-semibold px-4 py-2 rounded-full uppercase tracking-widest">
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-            3 of 4 April spots taken
+            Revenue grows when the system works
           </span>
         </motion.div>
 
