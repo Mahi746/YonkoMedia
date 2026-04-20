@@ -70,16 +70,17 @@ export default function Hero() {
         {/* Headline */}
         <motion.h1 {...fadeUp(0.2)}
           className="font-display font-bold text-[clamp(2.4rem,5.5vw,5.5rem)] leading-[1.02] tracking-tight text-white mb-5">
-          We make your growth
+          Let's fix the system
           <br />
-          <span className="gradient-text">unstoppable.</span>
+          <span className="gradient-text">behind your growth.</span>
         </motion.h1>
 
         {/* Sub */}
         <motion.p {...fadeUp(0.3)} className="text-white/50 text-base sm:text-lg max-w-lg leading-relaxed mb-6 px-2">
           We work as a fractional CMO to fix the{' '}
           <span className="text-accent underline decoration-accent/50 underline-offset-3">four levers</span>
-          {' '}that actually drive revenue.
+          {' '}that actually drive revenue. See visible results in just{' '}
+          <span className="text-accent underline decoration-accent/50 underline-offset-3">90 days</span>.
         </motion.p>
 
         {/* Formula — the IP */}
