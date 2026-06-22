@@ -47,6 +47,7 @@ export default function Footer() {
               { label: 'Case Studies', href: '#contact' },
               { label: 'FAQ', href: '#faq' },
               { label: 'Contact', href: 'mailto:hello@yonkomedia.com' },
+              { label: 'Privacy Policy', href: '/privacy' },
             ].map(({ label, href }) => (
               <a key={label} href={href}
                 className="text-white/35 hover:text-white text-sm transition-colors duration-200">{label}</a>
