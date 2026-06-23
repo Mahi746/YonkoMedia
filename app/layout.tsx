@@ -1,18 +1,10 @@
 import type { Metadata } from 'next'
-import { Space_Grotesk } from 'next/font/google'
 import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 
 const GA_ID = 'G-GB8TQ4Y7FJ'
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-space-grotesk',
-  weight: ['300', '400', '500', '600', '700'],
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://yonkomedia.com'),
@@ -56,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={spaceGrotesk.variable} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,7 +56,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
       </head>
-      <body className="bg-dark text-white antialiased overflow-x-hidden font-sans">
+      <body>
         {children}
         <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
