@@ -79,7 +79,7 @@ const sections = [
 
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen bg-[#f1f0ea] text-[#171714]">
+    <main className="min-h-screen bg-[#f1f0ea] text-[#171714]" style={{ fontFamily: 'Geist, system-ui, sans-serif' }}>
       <header className="px-5 py-5 md:px-10">
         <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-[#d8d5ca] bg-[#fbfaf7]/90 px-5 py-4 shadow-[0_18px_45px_rgba(40,34,25,0.06)] backdrop-blur">
           <Link href="/" className="text-xl font-bold tracking-[-0.045em] text-[#171714]">
