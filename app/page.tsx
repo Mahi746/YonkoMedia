@@ -1,29 +1,35 @@
-import Navbar from '@/components/Navbar'
-import Hero from '@/components/Hero'
-import LogoMarquee from '@/components/LogoMarquee'
-import ProblemChecklist from '@/components/ProblemChecklist'
-import RevenueLevers from '@/components/RevenueLevers'
-import BeforeAfter from '@/components/BeforeAfter'
-import Process from '@/components/Process'
-import CaseStudies from '@/components/CaseStudies'
-import FAQ from '@/components/FAQ'
-import Footer from '@/components/Footer'
-import CalendlyFloat from '@/components/CalendlyFloat'
+import { readFileSync } from 'node:fs'
+import path from 'node:path'
+import Script from 'next/script'
+
+function getHomepageMarkup() {
+  const source = readFileSync(path.join(process.cwd(), 'hero-carousel-concept.html'), 'utf8')
+    .replaceAll('public/concept-assets/', '/concept-assets/')
+    .replace(
+      '<a href="#faq">FAQs</a><a href="https://calendly.com/akshay-yonkomedia/30min"',
+      '<a href="#faq">FAQs</a><a href="/privacy">Privacy</a><a href="https://calendly.com/akshay-yonkomedia/30min"',
+    )
+
+  const style = source.match(/<style>([\s\S]*?)<\/style>/)?.[1] ?? ''
+  const body = source.match(/<body[^>]*>([\s\S]*?)<\/body>/)?.[1] ?? ''
+  const script = body.match(/<script>([\s\S]*?)<\/script>/)?.[1] ?? ''
+  const markup = body.replace(/<script>[\s\S]*?<\/script>/, '')
+
+  return { style, markup, script }
+}
 
 export default function Home() {
+  const { style, markup, script } = getHomepageMarkup()
+
   return (
-    <main>
-      <Navbar />
-      <Hero />
-      <LogoMarquee />
-      <ProblemChecklist />
-      <RevenueLevers />
-      <BeforeAfter />
-      <Process />
-      <CaseStudies />
-      <FAQ />
-      <Footer />
-      <CalendlyFloat />
-    </main>
+    <>
+      <style dangerouslySetInnerHTML={{ __html: style }} />
+      <div dangerouslySetInnerHTML={{ __html: markup }} />
+      <Script
+        id="yonkomedia-homepage-interactions"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: script }}
+      />
+    </>
   )
 }

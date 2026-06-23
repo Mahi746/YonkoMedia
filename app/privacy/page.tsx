@@ -2,208 +2,167 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — Yonkomedia',
+  title: 'Privacy Policy | Yonkomedia',
   description: 'Privacy Policy for Yonkomedia. Learn how we collect, use and protect your personal information.',
 }
 
+const sections = [
+  {
+    title: '1. Introduction',
+    body: [
+      'Yonkomedia ("we", "us", or "our") operates as a paid media and performance marketing agency. This Privacy Policy explains how we collect, use, disclose and protect your personal information when you interact with our website at yonkomedia.com, submit enquiries through our contact forms, or engage with our advertising on platforms such as Meta (Facebook and Instagram).',
+      'By submitting your information through any form on our website or through our Meta lead ads, you agree to the practices described in this policy.',
+    ],
+  },
+  {
+    title: '2. Information We Collect',
+    body: ['We collect information you provide directly, including your name, email address, phone number, company name, website URL, business revenue range, marketing budget, growth challenges, business goals and any other details you choose to share.'],
+    listTitle: 'We may also collect information automatically, such as:',
+    list: ['IP address and approximate location', 'Browser type and device information', 'Pages visited and time spent on site', 'Referring website or ad that brought you to our site', 'Clicks, scrolls and interactions on our website'],
+  },
+  {
+    title: '3. How We Use Your Information',
+    body: [
+      'We use the information we collect to respond to your enquiries, schedule strategy calls, assess whether our services are a good fit for your business, send relevant information about our services, improve our website and advertising, analyze marketing performance, comply with legal obligations and prevent fraud or misuse.',
+      'We do not sell your personal information to third parties. We do not use your data for any purpose other than those listed above without your consent.',
+    ],
+  },
+  {
+    title: '4. Meta Lead Ads',
+    body: [
+      'We run lead generation campaigns on Meta platforms including Facebook and Instagram. When you submit your information through a Meta lead form, that information is collected by Meta and shared with us in accordance with Meta’s data policies.',
+      'We use this information only to contact you about our services, evaluate fit and follow up on your request. You may opt out of further communications at any time by replying “unsubscribe” or emailing us.',
+    ],
+  },
+  {
+    title: '5. Cookies and Tracking Technologies',
+    body: ['We may use cookies, pixels and analytics tools to understand website performance, measure advertising effectiveness and improve user experience. You can control cookies through your browser settings, but some website features may not work as intended if cookies are disabled.'],
+    listTitle: 'Our website may use tools such as:',
+    list: ['Google Analytics 4 for traffic and campaign performance measurement', 'Microsoft Clarity for privacy-conscious session insights and heatmaps', 'Meta Pixel for conversion tracking and ad performance', 'Vercel Analytics and Speed Insights for site performance'],
+  },
+  {
+    title: '6. Data Sharing',
+    body: [
+      'We do not sell, rent or trade your personal information. We may share data with trusted service providers who help us operate our website, manage forms, analyze performance, schedule calls, run ads or provide client services.',
+      'Examples include Google Sheets for internal lead tracking and Calendly when you choose to book a call. We may also disclose information if required by law, regulation, legal process or to protect our rights and users.',
+    ],
+  },
+  {
+    title: '7. Data Retention',
+    body: ['We retain personal information only for as long as reasonably necessary to respond to enquiries, manage business relationships, comply with legal obligations, resolve disputes and improve our services. Lead enquiry data is typically retained for up to two years unless you ask us to delete it earlier.'],
+  },
+  {
+    title: '8. Your Rights',
+    body: ['Depending on your location, you may have rights to access, correct, delete, restrict or object to processing of your personal information. You may also request a copy of your data, withdraw consent where processing is based on consent, or opt out of marketing communications at any time.'],
+  },
+  {
+    title: '9. Security',
+    body: ['We use reasonable administrative, technical and organizational measures to protect your information. However, no method of transmission or storage is fully secure, so we cannot guarantee absolute security.'],
+  },
+  {
+    title: '10. Third-Party Links',
+    body: ['Our website may link to third-party websites, tools or platforms. We are not responsible for the privacy practices, policies or content of those third parties.'],
+  },
+  {
+    title: '11. Children’s Privacy',
+    body: ['Our website and services are intended for businesses and are not directed to children under 13. We do not knowingly collect personal information from children.'],
+  },
+  {
+    title: '12. Changes to This Policy',
+    body: ['We may update this Privacy Policy from time to time. The updated version will be posted on this page with a revised "Last updated" date.'],
+  },
+  {
+    title: '13. Contact Us',
+    body: ['If you have questions about this Privacy Policy or want to exercise your rights, contact Yonkomedia at hello@yonkomedia.com or visit yonkomedia.com. We will respond to reasonable privacy requests within 30 days.'],
+  },
+]
+
 export default function PrivacyPolicy() {
-  const updated = 'June 22, 2026'
-
   return (
-    <div className="bg-dark min-h-screen text-white">
-      {/* Header */}
-      <div className="border-b border-white/5">
-        <div className="max-w-4xl mx-auto px-6 py-6 flex items-center justify-between">
-          <Link href="/" className="font-display font-bold text-xl tracking-tight">
-            yonko<span className="text-accent">media</span>
+    <main className="min-h-screen bg-[#f1f0ea] text-[#171714]">
+      <header className="px-5 py-5 md:px-10">
+        <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-[#d8d5ca] bg-[#fbfaf7]/90 px-5 py-4 shadow-[0_18px_45px_rgba(40,34,25,0.06)] backdrop-blur">
+          <Link href="/" className="text-xl font-bold tracking-[-0.045em] text-[#171714]">
+            yonko<span className="text-[#bfff20]">media</span>
           </Link>
-          <Link href="/" className="text-white/40 hover:text-white text-sm transition-colors duration-200">
-            ← Back to home
+          <Link
+            href="/"
+            className="rounded-full bg-[#171714] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-[0_16px_35px_rgba(23,23,20,0.18)]"
+          >
+            Back to home
           </Link>
-        </div>
-      </div>
+        </nav>
+      </header>
 
-      {/* Content */}
-      <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
-        <div className="mb-12">
-          <p className="text-accent text-xs font-semibold uppercase tracking-widest mb-4">Legal</p>
-          <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4 tracking-tight">Privacy Policy</h1>
-          <p className="text-white/40 text-sm">Last updated: {updated}</p>
-        </div>
-
-        <div className="prose prose-invert max-w-none space-y-10">
-
-          <section>
-            <h2 className="text-white font-bold text-xl mb-3">1. Introduction</h2>
-            <p className="text-white/60 leading-relaxed">
-              Yonkomedia ("we", "us", or "our") operates as a paid media and performance marketing agency. This Privacy Policy explains how we collect, use, disclose and protect your personal information when you interact with our website at yonkomedia.com, submit enquiries through our contact forms, or engage with our advertising on platforms such as Meta (Facebook and Instagram).
-            </p>
-            <p className="text-white/60 leading-relaxed mt-3">
-              By submitting your information through any form on our website or through our Meta lead ads, you agree to the practices described in this policy.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-white font-bold text-xl mb-3">2. Information We Collect</h2>
-            <p className="text-white/60 leading-relaxed mb-3">We collect the following types of information:</p>
-            <div className="space-y-4">
-              <div className="bg-white/[0.03] border border-white/8 rounded-2xl p-5">
-                <h3 className="text-white font-semibold mb-2">Information you provide directly</h3>
-                <ul className="text-white/60 space-y-1.5 text-sm leading-relaxed list-disc list-inside">
-                  <li>Full name</li>
-                  <li>Email address</li>
-                  <li>Phone number</li>
-                  <li>Company name and website URL</li>
-                  <li>Business revenue range and marketing budget</li>
-                  <li>Growth challenges and business goals</li>
-                  <li>Any other information you choose to share</li>
-                </ul>
-              </div>
-              <div className="bg-white/[0.03] border border-white/8 rounded-2xl p-5">
-                <h3 className="text-white font-semibold mb-2">Information collected automatically</h3>
-                <ul className="text-white/60 space-y-1.5 text-sm leading-relaxed list-disc list-inside">
-                  <li>IP address and approximate location</li>
-                  <li>Browser type and device information</li>
-                  <li>Pages visited and time spent on site</li>
-                  <li>Referring website or ad that brought you to our site</li>
-                  <li>Clicks, scrolls and interactions on our website</li>
-                </ul>
+      <section className="px-5 pb-10 pt-8 md:px-10 md:pb-16 md:pt-14">
+        <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+          <aside className="lg:sticky lg:top-24 lg:self-start">
+            <div className="rounded-[32px] border border-[#d8d5ca] bg-white p-7 shadow-[0_24px_70px_rgba(40,34,25,0.08)] md:p-9">
+              <p className="mb-5 inline-flex rounded-full bg-[#bfff20] px-4 py-2 text-xs font-bold uppercase tracking-[0.14em] text-[#171714]">
+                Legal
+              </p>
+              <h1 className="max-w-md text-5xl font-semibold tracking-[-0.06em] md:text-6xl">
+                Privacy Policy
+              </h1>
+              <p className="mt-5 max-w-md text-base leading-7 text-[#68635c]">
+                How Yonkomedia collects, uses and protects information across our website, lead forms and advertising touchpoints.
+              </p>
+              <div className="mt-8 rounded-3xl bg-[#f1f0ea] p-5">
+                <span className="text-xs font-bold uppercase tracking-[0.14em] text-[#777169]">Last updated</span>
+                <p className="mt-2 text-lg font-semibold">June 22, 2026</p>
               </div>
             </div>
-          </section>
+          </aside>
 
-          <section>
-            <h2 className="text-white font-bold text-xl mb-3">3. How We Use Your Information</h2>
-            <p className="text-white/60 leading-relaxed mb-3">We use the information we collect to:</p>
-            <ul className="text-white/60 space-y-2 text-sm leading-relaxed list-disc list-inside">
-              <li>Respond to your enquiries and schedule strategy calls</li>
-              <li>Assess whether our services are a good fit for your business</li>
-              <li>Send you relevant information about our services (you may opt out at any time)</li>
-              <li>Improve our website, services and advertising</li>
-              <li>Analyse how our marketing campaigns are performing</li>
-              <li>Comply with legal obligations</li>
-            </ul>
-            <p className="text-white/60 leading-relaxed mt-4">
-              We do not sell your personal information to third parties. We do not use your data for any purpose other than those listed above without your consent.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-white font-bold text-xl mb-3">4. Meta Lead Ads</h2>
-            <p className="text-white/60 leading-relaxed">
-              We run lead generation campaigns on Meta platforms (Facebook and Instagram). When you submit your information through a Meta lead form, that information is collected by Meta and shared with us in accordance with Meta's data policies. By submitting a lead form on Meta, you agree to both Meta's Privacy Policy and this Privacy Policy.
-            </p>
-            <p className="text-white/60 leading-relaxed mt-3">
-              We use this information solely to follow up on your enquiry. We will contact you via email or phone within a reasonable timeframe. You may opt out of further communications at any time by replying "unsubscribe" or by emailing us at <a href="mailto:hello@yonkomedia.com" className="text-accent hover:underline">hello@yonkomedia.com</a>.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-white font-bold text-xl mb-3">5. Cookies and Tracking Technologies</h2>
-            <p className="text-white/60 leading-relaxed mb-4">
-              Our website uses the following tracking tools:
-            </p>
-            <div className="space-y-3">
-              {[
-                { name: 'Google Analytics 4', desc: 'Tracks website traffic, user behaviour and campaign performance. Data is anonymised and aggregated. You can opt out via Google\'s opt-out browser add-on.' },
-                { name: 'Microsoft Clarity', desc: 'Records session replays and heatmaps to help us understand how visitors use our site. No personally identifiable information is stored.' },
-                { name: 'Meta Pixel', desc: 'Tracks conversions from Meta ads and helps us build targeted audiences. If you visit our site after seeing a Meta ad, this pixel may link your visit to that ad.' },
-                { name: 'Vercel Analytics', desc: 'Measures website performance and core web vitals. Fully privacy-friendly with no personal data collection.' },
-              ].map(({ name, desc }) => (
-                <div key={name} className="bg-white/[0.03] border border-white/8 rounded-xl p-4">
-                  <p className="text-white font-semibold text-sm mb-1">{name}</p>
-                  <p className="text-white/50 text-sm leading-relaxed">{desc}</p>
+          <div className="space-y-4">
+            {sections.map((section) => (
+              <section
+                key={section.title}
+                className="rounded-[28px] border border-[#d8d5ca] bg-white p-6 shadow-[0_18px_45px_rgba(40,34,25,0.05)] md:p-8"
+              >
+                <h2 className="text-2xl font-semibold tracking-[-0.035em]">{section.title}</h2>
+                <div className="mt-4 space-y-4 text-[15px] leading-7 text-[#605b54] md:text-base">
+                  {section.body.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                  {section.listTitle ? <p className="font-semibold text-[#171714]">{section.listTitle}</p> : null}
+                  {section.list ? (
+                    <ul className="grid gap-2">
+                      {section.list.map((item) => (
+                        <li key={item} className="flex gap-3">
+                          <span className="mt-1.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-[#bfff20] text-xs font-bold text-[#171714]">
+                            ✓
+                          </span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
                 </div>
-              ))}
-            </div>
-          </section>
-
-          <section>
-            <h2 className="text-white font-bold text-xl mb-3">6. Data Sharing</h2>
-            <p className="text-white/60 leading-relaxed mb-3">
-              We share your information only in the following limited circumstances:
-            </p>
-            <ul className="text-white/60 space-y-2 text-sm leading-relaxed list-disc list-inside">
-              <li><strong className="text-white/80">Google Sheets:</strong> Lead form submissions are stored securely in Google Sheets for internal CRM purposes.</li>
-              <li><strong className="text-white/80">Calendly:</strong> If you book a call, your name and email are shared with Calendly to facilitate scheduling.</li>
-              <li><strong className="text-white/80">Legal requirements:</strong> We may disclose information if required by law or to protect our legal rights.</li>
-            </ul>
-            <p className="text-white/60 leading-relaxed mt-4">
-              We do not share, sell, rent or trade your personal information with third parties for their marketing purposes.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-white font-bold text-xl mb-3">7. Data Retention</h2>
-            <p className="text-white/60 leading-relaxed">
-              We retain your personal information for as long as necessary to fulfil the purposes outlined in this policy, or as required by applicable law. Lead enquiry data is typically retained for up to 2 years. You may request deletion of your data at any time by contacting us.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-white font-bold text-xl mb-3">8. Your Rights</h2>
-            <p className="text-white/60 leading-relaxed mb-3">
-              Depending on your location, you may have the following rights regarding your personal data:
-            </p>
-            <ul className="text-white/60 space-y-2 text-sm leading-relaxed list-disc list-inside">
-              <li><strong className="text-white/80">Access:</strong> Request a copy of the personal data we hold about you.</li>
-              <li><strong className="text-white/80">Correction:</strong> Request that we correct inaccurate or incomplete data.</li>
-              <li><strong className="text-white/80">Deletion:</strong> Request that we delete your personal data.</li>
-              <li><strong className="text-white/80">Opt-out:</strong> Opt out of marketing communications at any time.</li>
-              <li><strong className="text-white/80">Data portability:</strong> Request your data in a portable format.</li>
-            </ul>
-            <p className="text-white/60 leading-relaxed mt-4">
-              To exercise any of these rights, email us at <a href="mailto:hello@yonkomedia.com" className="text-accent hover:underline">hello@yonkomedia.com</a>. We will respond within 30 days.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-white font-bold text-xl mb-3">9. Security</h2>
-            <p className="text-white/60 leading-relaxed">
-              We implement appropriate technical and organisational measures to protect your personal information against unauthorised access, loss or disclosure. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-white font-bold text-xl mb-3">10. Third-Party Links</h2>
-            <p className="text-white/60 leading-relaxed">
-              Our website may contain links to third-party websites (such as LinkedIn, Instagram or Calendly). We are not responsible for the privacy practices of those sites and encourage you to review their privacy policies separately.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-white font-bold text-xl mb-3">11. Children's Privacy</h2>
-            <p className="text-white/60 leading-relaxed">
-              Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-white font-bold text-xl mb-3">12. Changes to This Policy</h2>
-            <p className="text-white/60 leading-relaxed">
-              We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of our website or services after changes constitutes acceptance of the updated policy.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-white font-bold text-xl mb-3">13. Contact Us</h2>
-            <p className="text-white/60 leading-relaxed">
-              If you have any questions, concerns or requests regarding this Privacy Policy or our data practices, please contact us:
-            </p>
-            <div className="mt-4 bg-white/[0.03] border border-white/8 rounded-2xl p-5 space-y-2">
-              <p className="text-white font-semibold">Yonkomedia</p>
-              <p className="text-white/60 text-sm">Email: <a href="mailto:hello@yonkomedia.com" className="text-accent hover:underline">hello@yonkomedia.com</a></p>
-              <p className="text-white/60 text-sm">Website: <a href="https://yonkomedia.com" className="text-accent hover:underline">yonkomedia.com</a></p>
-            </div>
-          </section>
-
+              </section>
+            ))}
+          </div>
         </div>
+      </section>
 
-        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <p className="text-white/25 text-xs">© {new Date().getFullYear()} Yonkomedia. All rights reserved.</p>
-          <Link href="/" className="text-accent text-sm hover:underline">← Back to home</Link>
+      <footer className="px-5 pb-5 md:px-10 md:pb-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-5 rounded-[32px] bg-[#bfff20] p-6 text-[#171714] md:flex-row md:items-center md:justify-between md:p-8">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.16em]">Ready when you are</p>
+            <p className="mt-2 max-w-xl text-2xl font-semibold tracking-[-0.04em]">
+              Let’s build the system behind your next stage of growth.
+            </p>
+          </div>
+          <a
+            href="https://calendly.com/akshay-yonkomedia/30min"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-[#171714] px-6 py-4 text-sm font-semibold text-white"
+          >
+            Book a Free Strategy Call →
+          </a>
         </div>
-      </div>
-    </div>
+      </footer>
+    </main>
   )
 }

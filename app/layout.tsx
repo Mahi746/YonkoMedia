@@ -16,25 +16,33 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://yonkomedia.com'),
-  title: 'Yonkomedia — Fractional CMO Studio',
+  title: 'Yonkomedia | Performance Marketing & Paid Ads Agency',
   description:
-    'Fractional CMO studio for ambitious brands. We fix the levers limiting your growth — Traffic, Conversion, Retention, Pricing — and build systems that compound.',
-  keywords: ['fractional CMO', 'growth marketing', 'revenue growth', 'marketing strategy', 'CMO for hire', 'growth systems', 'performance marketing'],
+    'Yonkomedia helps e-commerce and growth-focused brands scale profitably through paid ads, creative strategy and conversion optimization.',
+  keywords: [
+    'performance marketing agency',
+    'paid ads agency',
+    'Meta ads agency',
+    'Google ads agency',
+    'creative strategy',
+    'conversion optimization',
+    'growth marketing',
+  ],
   icons: {
     icon: '/icon.svg',
     shortcut: '/icon.svg',
   },
   openGraph: {
-    title: 'Yonkomedia — Fractional CMO Studio',
-    description: 'We fix the levers limiting your growth. Traffic × Conversion × Retention × Pricing.',
+    title: 'Yonkomedia | Performance Marketing & Paid Ads Agency',
+    description: 'Scale profitably with paid ads, creative strategy and conversion optimization.',
     type: 'website',
     url: 'https://yonkomedia.com',
     siteName: 'Yonkomedia',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Yonkomedia — Fractional CMO Studio',
-    description: 'We fix the levers limiting your growth. Traffic × Conversion × Retention × Pricing.',
+    title: 'Yonkomedia | Performance Marketing & Paid Ads Agency',
+    description: 'Scale profitably with paid ads, creative strategy and conversion optimization.',
   },
   robots: {
     index: true,
@@ -51,6 +59,10 @@ export default function RootLayout({
     <html lang="en" className={spaceGrotesk.variable} suppressHydrationWarning>
       <head>
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
       </head>
       <body className="bg-dark text-white antialiased overflow-x-hidden font-sans">
         {children}
