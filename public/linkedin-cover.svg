@@ -67,57 +67,57 @@
   <rect x="0" y="0" width="1584" height="2" fill="url(#accentGrad)" opacity="0.6"/>
 
   <!-- Logo: yonko (white) + media (lime) -->
-  <text x="120" y="178" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="62" fill="white" letter-spacing="-1">yonko</text>
-  <text x="342" y="178" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="62" fill="#CCFB55" letter-spacing="-1">media</text>
+  <text x="120" y="178" font-family="'Geist', system-ui, sans-serif" font-weight="700" font-size="62" fill="white" letter-spacing="-1">yonko</text>
+  <text x="342" y="178" font-family="'Geist', system-ui, sans-serif" font-weight="700" font-size="62" fill="#CCFB55" letter-spacing="-1">media</text>
 
   <!-- Divider line -->
   <rect x="120" y="196" width="360" height="1.5" fill="rgba(255,255,255,0.08)" rx="1"/>
 
   <!-- Tagline -->
-  <text x="120" y="230" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="500" font-size="16" fill="rgba(255,255,255,0.35)" letter-spacing="3">FRACTIONAL CMO  ·  GROWTH SYSTEMS  ·  PERFORMANCE</text>
+  <text x="120" y="230" font-family="'Geist', system-ui, sans-serif" font-weight="500" font-size="16" fill="rgba(255,255,255,0.35)" letter-spacing="3">FRACTIONAL CMO  ·  GROWTH SYSTEMS  ·  PERFORMANCE</text>
 
   <!-- Formula block — right side -->
   <!-- Box -->
   <rect x="860" y="132" width="604" height="132" rx="20" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
 
   <!-- Formula label -->
-  <text x="896" y="174" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="500" font-size="13" fill="rgba(255,255,255,0.3)" letter-spacing="2">REVENUE FORMULA</text>
+  <text x="896" y="174" font-family="'Geist', system-ui, sans-serif" font-weight="500" font-size="13" fill="rgba(255,255,255,0.3)" letter-spacing="2">REVENUE FORMULA</text>
 
   <!-- Revenue = -->
-  <text x="896" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="500" font-size="18" fill="rgba(255,255,255,0.35)">Revenue =</text>
+  <text x="896" y="220" font-family="'Geist', system-ui, sans-serif" font-weight="500" font-size="18" fill="rgba(255,255,255,0.35)">Revenue =</text>
 
   <!-- Traffic -->
-  <text x="1018" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="18" fill="#CCFB55">Traffic</text>
-  <text x="1090" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="18" fill="rgba(255,255,255,0.2)"> × </text>
+  <text x="1018" y="220" font-family="'Geist', system-ui, sans-serif" font-weight="700" font-size="18" fill="#CCFB55">Traffic</text>
+  <text x="1090" y="220" font-family="'Geist', system-ui, sans-serif" font-weight="400" font-size="18" fill="rgba(255,255,255,0.2)"> × </text>
   <!-- Conversion -->
-  <text x="1118" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="18" fill="#CCFB55">Conversion</text>
-  <text x="1238" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="18" fill="rgba(255,255,255,0.2)"> × </text>
+  <text x="1118" y="220" font-family="'Geist', system-ui, sans-serif" font-weight="700" font-size="18" fill="#CCFB55">Conversion</text>
+  <text x="1238" y="220" font-family="'Geist', system-ui, sans-serif" font-weight="400" font-size="18" fill="rgba(255,255,255,0.2)"> × </text>
   <!-- Retention -->
-  <text x="1266" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="18" fill="#CCFB55">Retention</text>
-  <text x="1376" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="18" fill="rgba(255,255,255,0.2)"> × </text>
+  <text x="1266" y="220" font-family="'Geist', system-ui, sans-serif" font-weight="700" font-size="18" fill="#CCFB55">Retention</text>
+  <text x="1376" y="220" font-family="'Geist', system-ui, sans-serif" font-weight="400" font-size="18" fill="rgba(255,255,255,0.2)"> × </text>
   <!-- Pricing -->
-  <text x="1404" y="220" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="18" fill="#CCFB55">Pricing</text>
+  <text x="1404" y="220" font-family="'Geist', system-ui, sans-serif" font-weight="700" font-size="18" fill="#CCFB55">Pricing</text>
 
   <!-- Proof metrics -->
   <g>
     <!-- Metric 1 -->
-    <text x="120" y="286" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="26" fill="#CCFB55">$1.3M</text>
-    <text x="120" y="308" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="12" fill="rgba(255,255,255,0.3)" letter-spacing="1">REVENUE DRIVEN</text>
+    <text x="120" y="286" font-family="'Geist', system-ui, sans-serif" font-weight="700" font-size="26" fill="#CCFB55">$1.3M</text>
+    <text x="120" y="308" font-family="'Geist', system-ui, sans-serif" font-weight="400" font-size="12" fill="rgba(255,255,255,0.3)" letter-spacing="1">REVENUE DRIVEN</text>
     <!-- Divider -->
     <rect x="216" y="278" width="1" height="38" fill="rgba(255,255,255,0.1)"/>
     <!-- Metric 2 -->
-    <text x="236" y="286" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="26" fill="#CCFB55">11×</text>
-    <text x="236" y="308" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="12" fill="rgba(255,255,255,0.3)" letter-spacing="1">BLENDED ROAS</text>
+    <text x="236" y="286" font-family="'Geist', system-ui, sans-serif" font-weight="700" font-size="26" fill="#CCFB55">11×</text>
+    <text x="236" y="308" font-family="'Geist', system-ui, sans-serif" font-weight="400" font-size="12" fill="rgba(255,255,255,0.3)" letter-spacing="1">BLENDED ROAS</text>
     <!-- Divider -->
     <rect x="312" y="278" width="1" height="38" fill="rgba(255,255,255,0.1)"/>
     <!-- Metric 3 -->
-    <text x="332" y="286" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="26" fill="#CCFB55">670K+</text>
-    <text x="332" y="308" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="12" fill="rgba(255,255,255,0.3)" letter-spacing="1">SOCIAL REACH</text>
+    <text x="332" y="286" font-family="'Geist', system-ui, sans-serif" font-weight="700" font-size="26" fill="#CCFB55">670K+</text>
+    <text x="332" y="308" font-family="'Geist', system-ui, sans-serif" font-weight="400" font-size="12" fill="rgba(255,255,255,0.3)" letter-spacing="1">SOCIAL REACH</text>
     <!-- Divider -->
     <rect x="444" y="278" width="1" height="38" fill="rgba(255,255,255,0.1)"/>
     <!-- Metric 4 -->
-    <text x="464" y="286" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="26" fill="#CCFB55">2×</text>
-    <text x="464" y="308" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="400" font-size="12" fill="rgba(255,255,255,0.3)" letter-spacing="1">DIRECT BOOKINGS</text>
+    <text x="464" y="286" font-family="'Geist', system-ui, sans-serif" font-weight="700" font-size="26" fill="#CCFB55">2×</text>
+    <text x="464" y="308" font-family="'Geist', system-ui, sans-serif" font-weight="400" font-size="12" fill="rgba(255,255,255,0.3)" letter-spacing="1">DIRECT BOOKINGS</text>
   </g>
 
   <!-- Bottom accent line -->

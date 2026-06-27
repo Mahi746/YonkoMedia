@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Website Design & Development — Yonkomedia</title>
-  <meta name="description" content="We design and build websites that turn paid traffic into customers. Strategy-first, conversion-led, live in 14 days." />
+  <title>Yonkomedia — Homepage Concept</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -50,6 +49,7 @@
     .hero-media{position:relative;height:min(640px,72vh);min-height:540px;isolation:isolate}
     .media-card{position:absolute;overflow:hidden;border:6px solid white;border-radius:28px;background:#222;box-shadow:0 28px 70px rgba(28,7,72,.28);transition:transform .55s ease}
     .media-card img{width:100%;height:100%;object-fit:cover}.media-card.main{width:320px;height:520px;left:48%;top:50%;transform:translate(-50%,-50%) rotate(-1deg);z-index:4}.media-card.side-a{width:210px;height:350px;left:2%;top:31%;transform:rotate(-7deg);z-index:2}.media-card.side-b{width:206px;height:342px;right:0;top:33%;transform:rotate(7deg);z-index:2}.hero-media:hover .main{transform:translate(-50%,-52%) rotate(1deg)}.hero-media:hover .side-a{transform:translate(-10px,8px) rotate(-10deg)}.hero-media:hover .side-b{transform:translate(10px,8px) rotate(10deg)}
+    .gumlet-frame{position:absolute;inset:0;background:#111}.gumlet-frame iframe{display:block;width:100%;height:100%;border:0}.media-card:not(.main) .gumlet-frame iframe{pointer-events:none}
     .video-ui{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 60%,rgba(0,0,0,.5));pointer-events:none}.video-ui::before{content:"";position:absolute;top:15px;left:15px;right:15px;height:4px;border-radius:99px;background:rgba(255,255,255,.85)}.play-chip{position:absolute;left:18px;bottom:18px;padding:10px 13px;border-radius:999px;background:rgba(15,15,15,.82);color:white;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.play-chip i{margin-right:6px}
     .reaction{position:absolute;z-index:8;padding:9px 12px;border-radius:999px;background:white;box-shadow:0 14px 30px rgba(30,8,75,.18);animation:bob 3.4s ease-in-out infinite}.reaction img{width:28px;height:28px}.reaction.one{left:5%;top:17%;transform:rotate(-5deg)}.reaction.two{right:1%;top:18%;animation-delay:.4s}.reaction.two img{width:35px;height:35px}
     .performance-card{position:absolute;right:-1%;bottom:8%;z-index:8;width:220px;padding:15px;border-radius:20px;background:white;color:var(--ink);box-shadow:0 18px 38px rgba(30,8,75,.22);transform:rotate(2deg)}.performance-card header{display:flex;justify-content:space-between;margin-bottom:10px;font-size:9px;text-transform:uppercase;letter-spacing:.08em}.perf-row{display:grid;grid-template-columns:30px 1fr auto;align-items:center;gap:8px;padding:9px 0;border-top:1px solid #eee}.perf-row img{width:30px;height:30px;border-radius:8px;object-fit:cover}.perf-row b{display:block;font-size:9px}.perf-row small{display:block;color:#999;font-size:8px}.perf-row strong{color:var(--purple);font-size:13px}
@@ -62,6 +62,7 @@
     .creative-showcase{overflow:hidden;padding:110px 0;background:var(--purple);color:white}.creative-showcase .section-head{padding:0 max(24px,calc((100vw - var(--max))/2));align-items:flex-end}.creative-showcase .section-head .lede{color:rgba(255,255,255,.72)}.creative-showcase .eyebrow{color:var(--lime)}.creative-rows{display:grid;gap:18px}.creative-marquee{overflow:hidden;mask-image:linear-gradient(90deg,rgba(0,0,0,0),#000 7%,#000 93%,rgba(0,0,0,0));-webkit-mask-image:linear-gradient(90deg,rgba(0,0,0,0),#000 7%,#000 93%,rgba(0,0,0,0))}.creative-track{display:flex;width:max-content;gap:18px;will-change:transform;animation:creative-left 46s linear infinite}.creative-marquee.row-two .creative-track{animation-name:creative-right;animation-duration:52s}.creative-track:hover{animation-play-state:paused}.creative-group{display:flex;align-items:center;gap:18px}.showcase-card{position:relative;flex:0 0 260px;width:260px;height:260px;overflow:hidden;border:1px solid rgba(255,255,255,.24);border-radius:24px;background:#29106a;box-shadow:0 20px 48px rgba(35,7,99,.24);transition:transform .28s ease,border-color .28s ease}.showcase-card.video{flex-basis:146px;width:146px}.showcase-card:hover{z-index:3;transform:translateY(-5px);border-color:rgba(255,255,255,.72)}.showcase-card img{width:100%;height:100%;object-fit:cover}.showcase-shade{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,5,38,0) 58%,rgba(13,5,38,.72) 100%)}.showcase-meta{position:absolute;left:12px;right:12px;bottom:11px;display:flex;align-items:flex-end;justify-content:space-between;gap:8px}.showcase-meta strong{font-size:10px;font-weight:600}.showcase-format{padding:6px 8px;border-radius:999px;background:rgba(255,255,255,.92);color:var(--ink);font-size:7px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.showcase-card.video::before{content:"";position:absolute;z-index:2;top:12px;left:12px;right:12px;height:3px;border-radius:999px;background:rgba(255,255,255,.84)}@keyframes creative-left{to{transform:translateX(calc(-50% - 9px))}}@keyframes creative-right{from{transform:translateX(calc(-50% - 9px))}to{transform:translateX(0)}}
 
     .process{background:white}.process .section-head{align-items:flex-end}.process .section-head .lede{margin:0}.process-layout{display:grid;grid-template-columns:minmax(440px,.92fr) minmax(0,1.08fr);gap:84px;align-items:start}.process-visual{position:sticky;top:92px;height:590px;overflow:hidden;border:1px solid #e4ded5;border-radius:34px;background:#f5f2ec;box-shadow:0 24px 60px rgba(55,43,31,.07)}.process-scene{position:absolute;inset:0;padding:34px;display:flex;flex-direction:column;opacity:0;transform:translateY(18px) scale(.985);pointer-events:none;transition:opacity .45s ease,transform .55s cubic-bezier(.2,.72,.16,1)}.process-scene.active{opacity:1;transform:none;pointer-events:auto}.scene-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}.scene-kicker{margin:0;color:var(--purple);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.scene-count{padding:7px 10px;border:1px solid #d8ccff;border-radius:999px;background:#f0ebff;color:var(--purple);font-size:9px;font-weight:700}.scene-cards{position:relative;flex:1;margin-bottom:54px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr .78fr;gap:14px}.ui-card{position:relative;overflow:hidden;padding:20px;border:1px solid #dfd9d0;border-radius:22px;background:white;box-shadow:0 14px 30px rgba(59,45,31,.06)}.ui-card.primary-panel{grid-column:1/-1}.ui-card h4{margin:0 0 5px;font-size:15px;letter-spacing:-.025em}.ui-card p{margin:0;color:#8a847d;font-size:9px;line-height:1.45}.ui-topline{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.ui-label{color:var(--purple);font-size:9px;font-weight:700}.ui-status{padding:5px 8px;border-radius:999px;background:#f0ebff;color:var(--purple);font-size:8px;font-weight:700}.audit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.audit-item{padding:12px;border-radius:13px;background:#f7f5f2}.audit-item strong,.asset-card strong,.metric-box strong{display:block;font-size:11px;font-weight:600}.audit-item span,.asset-card span,.metric-box span{display:block;margin-top:4px;color:#999;font-size:8px}.progress-line{height:6px;margin-top:10px;overflow:hidden;border-radius:99px;background:#e9e5df}.progress-line i{display:block;height:100%;border-radius:99px;background:var(--purple)}.insight-list,.setup-list{display:grid;gap:9px;margin-top:14px}.insight-row,.setup-row{display:flex;align-items:center;gap:8px;color:#625d56;font-size:9px}.ui-check{width:18px;height:18px;display:grid;place-items:center;flex:0 0 auto;border-radius:50%;background:#eee9ff;color:var(--purple);font-size:9px;font-style:normal}.angle-grid,.asset-grid,.metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.angle-card,.asset-card,.metric-box{padding:12px;border-radius:14px;background:#f6f3ff}.angle-card b{display:block;margin-bottom:18px;color:var(--purple);font-size:9px}.angle-card strong{font-size:11px;font-weight:600}.channel-row{display:flex;gap:7px;margin-top:15px}.channel-pill{padding:7px 9px;border-radius:999px;background:#f7f5f2;color:#625d56;font-size:8px;font-weight:600}.asset-thumb{height:58px;margin-bottom:10px;border-radius:10px;background:#e9e3ff;overflow:hidden}.asset-thumb img{width:100%;height:100%;object-fit:cover}.launch-panel{height:100%;display:grid;place-items:center;text-align:center}.launch-ring{width:92px;height:92px;margin:0 auto 18px;display:grid;place-items:center;border:8px solid #eee9ff;border-top-color:var(--purple);border-radius:50%;color:var(--purple);font-size:22px;font-weight:600;transform:rotate(18deg)}.launch-ring span{transform:rotate(-18deg)}.launch-meta{display:flex;justify-content:center;gap:18px;margin-top:18px}.launch-meta div{padding:10px 14px;border-radius:12px;background:#f7f5f2}.launch-meta strong,.launch-meta span{display:block}.launch-meta strong{font-size:11px;font-weight:600}.launch-meta span{margin-top:3px;color:#999;font-size:8px}.bar-chart{height:92px;margin-top:18px;display:flex;align-items:flex-end;gap:9px}.bar-chart span{flex:1;border-radius:8px 8px 3px 3px;background:#bbaaff}.bar-chart span:nth-child(2n){background:var(--purple)}.process-badge{position:absolute;left:34px;right:34px;bottom:28px;z-index:8;padding-top:16px;border-top:1px solid #ddd6cd;display:flex;justify-content:space-between;color:#6e6861;font-size:10px;font-weight:600}.process-badge::after{content:"Scroll to continue ↓";color:var(--purple)}.process-list{position:relative;padding-left:64px}.process-track{position:absolute;left:22px;top:0;bottom:0;width:2px;background:#e3ded7}.process-fill{position:absolute;left:0;top:0;width:100%;height:0;background:var(--purple);transition:height .18s linear}.process-step{min-height:300px;padding:34px 0;border-bottom:1px solid var(--line)}.process-node{position:absolute;left:5px;width:35px;height:35px;display:grid;place-items:center;border-radius:50%;background:white;border:2px solid #d8d2c9;color:#8b857d;font-size:11px;font-weight:600;transition:.25s}.process-step.active .process-node{background:var(--purple);border-color:var(--purple);color:white;transform:scale(1.08)}.process-step .eyebrow{margin-bottom:12px;color:var(--purple);font-weight:700}.process-step p{margin:14px 0 0;max-width:580px;color:var(--muted);font-size:16px;line-height:1.62}
+    .process-mobile-visual{display:none}
 
     .results{background:var(--mint)}.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.result-card{min-height:400px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;border-radius:28px;background:white;border:1px solid rgba(18,18,18,.09);transition:transform .3s ease}.result-card:hover{transform:translateY(-7px)}.result-card:nth-child(2){background:var(--ink);color:white}.result-card:nth-child(3){background:var(--coral)}.result-metrics{display:flex;gap:25px}.result-metric strong{display:block;font-size:42px;line-height:1;letter-spacing:-.055em}.result-metric span{display:block;margin-top:8px;font-size:9px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.55}.result-card small{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;opacity:.55}.result-card h3{margin-top:15px}.result-card p{margin:14px 0 0;color:var(--muted);line-height:1.58}.result-card:nth-child(2) p{color:rgba(255,255,255,.62)}.result-card:nth-child(3) p{color:rgba(18,18,18,.65)}
 
@@ -365,7 +366,148 @@
     .hero-detail{position:absolute;z-index:7;padding:8px 11px;border:1px solid rgba(23,23,20,.1);border-radius:999px;background:rgba(255,255,255,.86);color:var(--ink);font-size:10px;font-weight:600;letter-spacing:-.02em;box-shadow:0 12px 28px rgba(43,38,29,.1);backdrop-filter:blur(10px);animation:bob 4.2s ease-in-out infinite}.hero-detail.detail-one{left:11%;bottom:13%}.hero-detail.detail-two{right:8%;top:10%;animation-delay:.7s}
     @media(max-width:1199px){.service-card,.service-card:nth-child(2),.service-card:nth-child(3){height:600px;min-height:600px}}
     @media(max-width:1080px){.service-card,.service-card:nth-child(2),.service-card:nth-child(3){height:auto;min-height:620px}.media-card.side-a{left:2%;right:auto}.media-card.side-b{left:calc(100% - 206px);right:auto}}
-    @media(max-width:640px){.service-card,.service-card:nth-child(2),.service-card:nth-child(3){min-height:640px}.story-rating{flex-basis:320px;width:320px;padding:26px}.rating-mark strong{font-size:50px}.rating-mark i{font-size:32px}.story-rating>span{font-size:21px}.hero-detail{font-size:8px}.hero-detail.detail-one{left:2%;bottom:9%}.hero-detail.detail-two{right:2%;top:9%}.media-card.side-a{left:-9%;right:auto}.media-card.side-b{left:calc(100% - 141px);right:auto}}
+    @media(max-width:640px){
+      html,body{width:100%;max-width:100%;overflow-x:clip}
+      .service-card,.service-card:nth-child(2),.service-card:nth-child(3){min-height:640px}
+      .story-rating{flex-basis:320px;width:320px;padding:26px}.rating-mark strong{font-size:50px}.rating-mark i{font-size:32px}.story-rating>span{font-size:21px}
+      .hero{width:100%;padding-inline:20px;overflow:hidden}
+      .site-nav{left:20px;right:20px;width:auto}
+      .hero-grid{width:100%;min-width:0;gap:0}
+      .hero-copy{width:100%;min-width:0}
+      .hero-copy .eyebrow{max-width:100%;padding:8px 10px;white-space:nowrap;font-size:10px;letter-spacing:-.015em}
+      .proof{margin-top:36px}
+      .hero-media{width:100%;max-width:100%;height:500px;min-height:500px;margin-top:18px}
+      .hero-media::before{inset:12% 0 7%;filter:blur(25px)}
+      .hero-detail{font-size:8px}.hero-detail.detail-one{left:3%;bottom:8%}.hero-detail.detail-two{right:3%;top:10%}
+      .media-card.main{width:min(72vw,270px);height:min(128vw,480px);left:50%;top:50%}
+      .media-card.side-a{width:min(40vw,150px);height:min(71vw,267px);left:-5%;right:auto;top:35%}
+      .media-card.side-b{width:min(40vw,150px);height:min(71vw,267px);left:auto;right:-5%;top:36%}
+      .reaction.one{left:0}.reaction.two{right:0}.performance-card{right:0}
+    }
+
+    @media(max-width:640px){
+      .process{padding-top:80px;padding-bottom:80px}
+      .process .section-head{margin-bottom:52px}
+      .process-layout{display:block}
+      .process-visual{display:none}
+      .process-list{padding-left:0}
+      .process-track,.process-node{display:none}
+      .process-step{min-height:0;padding:46px 0 54px}
+      .process-step:first-of-type{padding-top:0}
+      .process-step:last-child{padding-bottom:0;border-bottom:0}
+      .process-step .eyebrow{width:max-content;margin:0 0 12px;padding:7px 10px;border-radius:999px;background:var(--lime);color:var(--ink);font-size:12px;line-height:1;letter-spacing:0}
+      .process-step h3{font-size:30px;line-height:1.15}
+      .process-step>p:not(.eyebrow){margin-top:14px;font-size:16px;line-height:1.55}
+      .process-mobile-visual{position:relative;height:470px;margin-top:26px;display:block;overflow:hidden;border:1px solid #e4ded5;border-radius:22px;background:var(--paper);box-shadow:0 18px 42px rgba(55,43,31,.07)}
+      .process-mobile-visual .process-scene{position:relative;inset:auto;width:100%;height:100%;padding:20px;opacity:1;transform:none;pointer-events:auto}
+      .process-mobile-visual .scene-head{margin-bottom:16px}
+      .process-mobile-visual .scene-cards{margin-bottom:0;gap:9px}
+      .process-mobile-visual .ui-card{padding:13px;border-radius:15px}
+      .process-mobile-visual .ui-topline{margin-bottom:11px}
+      .process-mobile-visual .audit-grid{gap:6px}
+      .process-mobile-visual .audit-item{padding:8px}
+      .process-mobile-visual .angle-card,.process-mobile-visual .asset-card,.process-mobile-visual .metric-box{padding:8px}
+      .process-mobile-visual .asset-thumb{height:48px}
+    }
+
+    /* Keep live video players at one intrinsic size so carousel swaps only move layers. */
+    .hero-media .media-card,.hero-media .media-card.main,.hero-media .media-card.side-a,.hero-media .media-card.side-b{width:310px;height:auto;aspect-ratio:9/16;top:50%;right:auto;will-change:transform,left,opacity;transition:left 1.15s cubic-bezier(.22,.72,.2,1),transform 1.15s cubic-bezier(.22,.72,.2,1),opacity .55s ease,box-shadow .55s ease}
+    .hero-media .media-card.main{left:50%;z-index:4;opacity:1;transform:translate(-50%,-50%) scale(1) rotate(-2deg)}
+    .hero-media .media-card.side-a{left:11%;z-index:2;opacity:.78;transform:translate(-50%,-50%) scale(.66) rotate(-5deg)}
+    .hero-media .media-card.side-b{left:89%;z-index:2;opacity:.78;transform:translate(-50%,-50%) scale(.66) rotate(5deg)}
+    .hero-media:hover .media-card.main{transform:translate(-50%,-50%) scale(1) rotate(-1deg)}
+    .hero-media:hover .media-card.side-a{transform:translate(-50%,-50%) scale(.66) rotate(-6deg)}
+    .hero-media:hover .media-card.side-b{transform:translate(-50%,-50%) scale(.66) rotate(6deg)}
+    @media(max-width:640px){
+      .hero-media .media-card,.hero-media .media-card.main,.hero-media .media-card.side-a,.hero-media .media-card.side-b{width:min(72vw,270px);height:auto}
+      .hero-media .media-card.main{left:50%;transform:translate(-50%,-50%) scale(1) rotate(-2deg)}
+      .hero-media .media-card.side-a{left:9%;transform:translate(-50%,-50%) scale(.56) rotate(-5deg)}
+      .hero-media .media-card.side-b{left:91%;transform:translate(-50%,-50%) scale(.56) rotate(5deg)}
+      .hero-media:hover .media-card.main{transform:translate(-50%,-50%) scale(1) rotate(-1deg)}
+      .hero-media:hover .media-card.side-a{transform:translate(-50%,-50%) scale(.56) rotate(-6deg)}
+      .hero-media:hover .media-card.side-b{transform:translate(-50%,-50%) scale(.56) rotate(6deg)}
+    }
+
+    /* Outcome-led case studies */
+    .results{background:var(--paper)}
+    .case-carousel{position:relative;width:100vw;margin-left:calc(50% - 50vw);overflow:hidden}
+    .case-study-stack{display:flex;gap:22px;overflow:visible;scrollbar-width:none;padding:0 max(20px,calc((100vw - var(--max))/2)) 8px;will-change:transform;transform:translate3d(0,0,0);transition:transform .86s cubic-bezier(.16,1,.3,1)}
+    .case-study-stack::-webkit-scrollbar{display:none}
+    .case-study-card{position:relative;overflow:hidden;flex:0 0 min(1120px,78vw);min-height:430px;padding:24px;display:grid;grid-template-columns:minmax(0,1.14fr) minmax(360px,.86fr);gap:28px;align-items:stretch;border:1px solid var(--line);border-radius:28px;background:#fbfaf8;box-shadow:0 22px 56px rgba(43,38,29,.06)}
+    .case-study-card:nth-child(2){background:white}
+    .case-copy{padding:18px 10px 10px 16px;display:flex;flex-direction:column}
+    .case-copy .eyebrow{width:max-content;margin-bottom:16px;padding:6px 9px;border-radius:999px;background:var(--lime);color:var(--ink);font-size:9px;letter-spacing:.055em}
+    .case-copy h3{max-width:760px;font-size:clamp(27px,2.4vw,34px);line-height:1.08;letter-spacing:-.045em}
+    .case-copy>p:not(.eyebrow){max-width:710px;margin:18px 0 0;color:var(--muted);font-size:17px;line-height:1.55;letter-spacing:-.025em}
+    .case-proof{width:min(100%,620px);margin-top:auto;padding:20px 22px;border:1px solid rgba(23,23,20,.12);border-radius:22px;background:var(--paper)}
+    .case-proof blockquote{margin:0;color:#34312d;font-size:19px;line-height:1.38;letter-spacing:-.035em}
+    .case-proof-bottom{margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .case-proof-bottom span{color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .case-proof-bottom a{padding:12px 18px;border:1px solid rgba(23,23,20,.14);border-radius:999px;background:white;color:var(--ink);font-size:14px;font-weight:600;text-decoration:none;transition:transform .2s ease,background .2s ease}
+    .case-proof-bottom a:hover{transform:translateY(-2px);background:var(--lime)}
+    .case-controls{width:min(calc(100% - 40px),var(--max));margin:24px auto 0;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:22px}
+    .case-progress{height:3px;overflow:hidden;border-radius:999px;background:#d8d5ca}.case-progress span{display:block;width:33.333%;height:100%;border-radius:inherit;background:var(--ink);transform-origin:left;transition:transform .8s cubic-bezier(.16,1,.3,1)}
+    .case-arrows{display:flex;gap:10px}.case-arrow{width:48px;height:48px;display:grid;place-items:center;border:1px solid rgba(23,23,20,.13);border-radius:50%;background:white;color:var(--ink);box-shadow:0 16px 34px rgba(43,38,29,.1);cursor:pointer;transition:transform .2s ease,background .2s ease}.case-arrow:hover{background:var(--lime);transform:translateY(-2px)}
+    .case-visual{position:relative;min-height:380px;overflow:hidden;border:1px solid rgba(23,23,20,.1);border-radius:24px;background:#e8edf2;box-shadow:inset 0 0 0 1px rgba(255,255,255,.55)}
+    .case-visual.photo-card{background:#dfe7e5}.case-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.case-photo-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,18,.03),rgba(10,22,18,.34))}
+    .case-browser{position:absolute;left:22px;right:22px;top:22px;height:34px;padding:12px;display:flex;gap:7px;border-radius:13px;background:rgba(255,255,255,.72);backdrop-filter:blur(14px)}
+    .case-browser span{width:7px;height:7px;border-radius:50%;background:#b9b3a8}
+    .case-result-badge{position:absolute;right:18px;bottom:18px;z-index:5;padding:11px 14px;border-radius:999px;background:var(--lime);color:var(--ink);font-size:12px;font-weight:700;box-shadow:0 14px 28px rgba(43,38,29,.12)}
+    .case-chip{position:absolute;z-index:4;padding:10px 13px;border-radius:999px;background:white;color:var(--ink);font-size:12px;font-weight:700;box-shadow:0 14px 28px rgba(43,38,29,.12)}
+    .case-chip.meta{left:34px;top:100px}.case-chip.google{right:34px;top:122px}.case-chip.search{left:50%;bottom:96px;transform:translateX(-50%)}
+    .channel-lift{position:absolute;left:50%;top:50%;width:min(72%,300px);padding:22px;border-radius:24px;background:white;box-shadow:0 18px 42px rgba(43,38,29,.12);transform:translate(-50%,-44%) rotate(-2deg)}
+    .channel-lift strong{font-size:18px}.channel-lift div{height:145px;margin-top:18px;display:flex;align-items:flex-end;gap:12px}.channel-lift i{flex:1;border-radius:12px 12px 5px 5px;background:linear-gradient(180deg,var(--lime),#151512)}
+    .image-stat-card{position:absolute;left:22px;bottom:22px;z-index:4;padding:18px 20px;border-radius:20px;background:rgba(255,255,255,.92);box-shadow:0 18px 40px rgba(43,38,29,.16);backdrop-filter:blur(12px)}.image-stat-card strong{display:block;font-size:46px;line-height:1;letter-spacing:-.06em}.image-stat-card span{display:block;margin-top:5px;color:var(--muted);font-size:11px;font-weight:700;text-transform:uppercase}
+    .case-visual.revenue{background:linear-gradient(135deg,#eee9ff,#f8f7f2)}
+    .revenue-art{position:absolute;object-fit:cover;border:6px solid white;border-radius:20px;box-shadow:0 18px 45px rgba(43,38,29,.16)}
+    .revenue-art.art-one{left:28px;top:58px;width:48%;aspect-ratio:1;transform:rotate(-5deg)}
+    .revenue-art.art-two{right:18px;bottom:58px;width:52%;aspect-ratio:1;transform:rotate(4deg)}
+    .revenue-card{position:absolute;left:50%;top:50%;z-index:4;width:180px;padding:18px;border-radius:22px;background:white;text-align:center;box-shadow:0 18px 45px rgba(43,38,29,.18);transform:translate(-50%,-50%)}
+    .revenue-card small,.revenue-card span{display:block;color:var(--muted);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}.revenue-card strong{display:block;margin:6px 0;font-size:54px;line-height:1;letter-spacing:-.06em}
+    .case-visual.farm{background:linear-gradient(180deg,#cfe4f1 0 42%,#dfe9cf 42% 100%)}
+    .farm-sky{position:absolute;inset:0 0 44%;background:radial-gradient(circle at 26% 30%,rgba(255,255,255,.92) 0 12%,transparent 13%),linear-gradient(135deg,#d7ebf5,#a9cce0)}
+    .farm-field{position:absolute;left:-10%;right:-10%;bottom:-8%;height:62%;background:repeating-linear-gradient(105deg,#8fb15e 0 18px,#a6c775 18px 36px);border-radius:48% 52% 0 0/18% 20% 0 0;transform:rotate(-2deg)}
+    .farm-plot{position:absolute;border:2px solid rgba(255,255,255,.75);border-radius:18px;background:rgba(255,255,255,.18);backdrop-filter:blur(3px)}
+    .plot-one{left:16%;bottom:18%;width:36%;height:34%;transform:rotate(-8deg)}.plot-two{right:11%;bottom:20%;width:38%;height:38%;transform:rotate(6deg)}
+    .farm-pin{position:absolute;right:16%;top:36%;z-index:4;padding:12px 14px;display:flex;align-items:center;gap:8px;border-radius:999px;background:white;font-size:12px;font-weight:700;box-shadow:0 16px 34px rgba(43,38,29,.14)}.farm-pin i{color:#ec5f48}
+    .farm-stat{position:absolute;left:22px;bottom:22px;z-index:4;padding:18px;border-radius:20px;background:white;box-shadow:0 18px 40px rgba(43,38,29,.14)}.farm-stat strong{display:block;font-size:44px;line-height:1;letter-spacing:-.06em}.farm-stat span{display:block;margin-top:5px;color:var(--muted);font-size:11px;font-weight:700;text-transform:uppercase}
+    @media(max-width:900px){.case-study-card{flex-basis:86vw;grid-template-columns:1fr}.case-visual{min-height:360px;order:-1}.case-copy{padding:2px}.case-proof{margin-top:28px}}
+    @media(max-width:640px){.results{padding-top:80px;padding-bottom:82px}.results .section-head{text-align:left;gap:14px;margin-bottom:28px}.results .section-head h2{font-size:34px;line-height:1;letter-spacing:-.05em}.results .section-head .lede{font-size:15px;line-height:1.5}.case-carousel{width:100vw;margin-left:calc(50% - 50vw);overflow:hidden}.case-study-stack{gap:12px;padding:0 20px 8px}.case-study-card{flex:0 0 calc(100vw - 40px);min-height:0;padding:14px;border-radius:22px;gap:16px;grid-template-columns:1fr}.case-copy{padding:0}.case-copy .eyebrow{margin-bottom:12px;padding:5px 8px;font-size:8px;letter-spacing:.05em}.case-copy h3{max-width:100%;font-size:24px;line-height:1.08;letter-spacing:-.045em}.case-copy>p:not(.eyebrow){margin-top:12px;font-size:14px;line-height:1.48;letter-spacing:-.02em}.case-visual{order:-1;min-height:190px;border-radius:18px}.case-chip{padding:6px 9px;font-size:9px}.case-chip.meta{left:12px;top:14px}.case-chip.google{right:12px;top:32px}.case-chip.search{bottom:52px}.channel-lift{width:74%;padding:18px}.channel-lift div{height:108px}.image-stat-card,.farm-stat{left:12px;bottom:12px;padding:9px 11px;border-radius:14px}.image-stat-card strong,.farm-stat strong{font-size:22px}.image-stat-card span,.farm-stat span{font-size:8px}.case-result-badge{right:12px;bottom:12px;padding:7px 9px;font-size:9px}.case-proof{margin-top:16px;padding:14px;border-radius:18px}.case-proof blockquote{font-size:15px;line-height:1.38}.case-proof-bottom{margin-top:14px;gap:10px;align-items:flex-start;flex-direction:column}.case-proof-bottom span{font-size:9px}.case-proof-bottom a{width:100%;padding:10px 14px;font-size:13px;text-align:center}.revenue-art.art-one{left:14px;top:32px;width:43%}.revenue-art.art-two{right:14px;bottom:28px;width:43%}.revenue-card{width:116px;padding:12px;border-radius:16px}.revenue-card strong{font-size:30px}.farm-pin{right:12px;top:32px;padding:7px 9px;font-size:9px}.hero-detail.detail-one,.performance-card{display:none}.case-controls{width:calc(100% - 40px);grid-template-columns:1fr;gap:16px;margin-top:18px}.case-arrows{justify-content:flex-end}.case-arrow{width:42px;height:42px}}
+
+    /* Final responsive polish */
+    .showcase-card>video{display:block;width:100%;height:100%;object-fit:cover}
+    .creative-track{animation-duration:105s}
+    .creative-marquee.row-two .creative-track{animation-duration:98s}
+    .method-outro-mobile{display:none}
+    .trust-label{text-align:center}
+    .trust-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    @media(max-width:640px){
+      footer{padding:20px}
+      .footer-shell{padding:20px}
+      .hero{height:auto;min-height:0;padding-bottom:28px}
+      .trust-label{text-align:center}
+      .trust-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .method-outro-desktop{display:none}
+      .method-outro-mobile{display:block;width:100%;padding:15px 18px;border-radius:20px;font-size:16px;font-weight:600;line-height:1.45;text-align:center}
+      .conversion-motion{height:230px}
+      .conversion-path{inset:14px;width:auto;padding:8px;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr;gap:7px}
+      .conversion-step{min-width:0;padding:7px;grid-template-columns:26px minmax(0,1fr);gap:6px}
+      .conversion-step>span{width:26px;height:26px;font-size:13px}
+      .conversion-step div{min-width:0}
+      .conversion-step small{font-size:7px}
+      .conversion-step strong{font-size:9px;line-height:1.1;white-space:normal;overflow-wrap:anywhere}
+      .process{padding-top:80px;padding-bottom:74px}
+      .process .section-head{margin-bottom:38px}
+      .process-list{position:relative;padding:0 0 18px}
+      .process-step,.process-step:first-of-type,.process-step:last-child{position:sticky;top:14px;min-height:0;margin:0 0 18px;padding:24px 18px 20px;border:1px solid #e4ded5;border-radius:22px;background:#fff;box-shadow:0 18px 42px rgba(55,43,31,.08)}
+      .process-step:nth-of-type(1){z-index:1}.process-step:nth-of-type(2){z-index:2}.process-step:nth-of-type(3){z-index:3}.process-step:nth-of-type(4){z-index:4}.process-step:nth-of-type(5){z-index:5}
+      .process-mobile-visual{height:390px;margin-top:22px;border-radius:18px;box-shadow:none}
+      .process-mobile-visual .process-scene{padding:16px}
+      .footer-cta{padding-top:76px}
+      .footer-emoji.party{left:auto;right:58px;top:20px;bottom:auto;font-size:34px;transform:rotate(8deg)}
+      .footer-emoji.laugh{left:auto;right:18px;top:22px;bottom:auto;font-size:31px;transform:rotate(-7deg)}
+      .footer-copy .primary{width:100%;padding-inline:16px;font-size:13px;white-space:nowrap}
+    }
   </style>
 </head>
 <body>
@@ -381,58 +523,57 @@
         <button class="scroll-call book-call" type="button" aria-label="Book a FREE Strategy Call"><span class="scroll-call-icon" aria-hidden="true">🗓️</span><span class="scroll-call-label">Book a FREE Strategy Call</span></button>
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Website Design &amp; Development</p>
-            <h1>We build <span class="paid-ads" tabindex="0">websites.<span class="channel-popover" aria-label="What we build"><span class="channel meta" aria-label="Landing Pages" style="background:#171714;font-size:11px;width:auto;border-radius:8px;padding:0 10px"><small style="display:block">Landing Pages</small></span><span class="channel tiktok" aria-label="Full Sites" style="font-size:11px;width:auto;border-radius:8px;padding:0 10px"><small style="display:block">Full Sites</small></span><span class="channel youtube" aria-label="E-Commerce" style="background:#d4ff3f;color:#171714;font-size:11px;width:auto;border-radius:8px;padding:0 10px"><small style="display:block">E-Commerce</small></span></span></span><br>Your ads deserve<br>somewhere good to land.</h1>
-            <p class="lede">Most paid traffic hits a page that confuses, bores or loses the visitor. We build sites that close — specific to your offer, your audience and your ads. Live in 14 days.</p>
-            <div class="hero-actions"><button class="primary book-call" type="button">Get a Free Website Audit →</button><a class="secondary" href="#results">See Our Work</a></div>
-            <div class="proof"><div class="proof-item"><strong>14</strong><span>Day delivery</span></div><div class="proof-item"><strong>30+</strong><span>Sites built</span></div><div class="proof-item"><strong>2×</strong><span>Conv. lift avg.</span></div></div>
+            <p class="eyebrow">Performance marketing, built around creative</p>
+            <h1>We help brands<br>scale profitably<br>with <span class="paid-ads" tabindex="0">paid ads.<span class="channel-popover" aria-label="Advertising channels"><span class="channel meta" aria-label="Meta"><i class="fa-brands fa-meta"></i></span><span class="channel google" aria-label="Google"><i class="fa-brands fa-google"></i></span><span class="channel tiktok" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></span><span class="channel youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></span></span></span></h1>
+            <p class="lede">We help e-commerce and growth-focused brands acquire customers profitably — through ads management, creative strategy and conversion optimization.</p>
+            <div class="hero-actions"><button class="primary book-call" type="button">Book a Free Strategy Call →</button><a class="secondary" href="#results">View Case Studies</a></div>
+            <div class="proof"><div class="proof-item"><strong>$1.3M</strong><span>Revenue driven</span></div><div class="proof-item"><strong>11×</strong><span>Blended ROAS</span></div><div class="proof-item"><strong>670K+</strong><span>Social reach</span></div></div>
           </div>
           <div class="hero-media" aria-label="Campaign creative showcase">
-            <article class="media-card side-a"><img src="https://embed-ssl.wistia.com/deliveries/00085a64065f4a187739b4371ea21c641e64b4c0.jpg?image_crop_resized=360x640" alt="Landing page creative" /></article>
-            <article class="media-card main"><img src="https://embed-ssl.wistia.com/deliveries/35beb64ea2af1c97f1bc278415db206f2c54d982.jpg?image_crop_resized=360x640" alt="Website design showcase" /><div class="video-ui"><span class="play-chip"><i class="fa-solid fa-globe"></i>Live in 14 days</span></div></article>
-            <article class="media-card side-b"><img src="https://embed-ssl.wistia.com/deliveries/d4dd833d01253010f5c0c9240a3ba3cb7208fa24.jpg?image_crop_resized=360x640" alt="E-commerce design" /></article>
-            <span class="reaction one" role="img" aria-label="Fast delivery">⚡</span>
-            <span class="reaction two" role="img" aria-label="Conversions up">📈</span>
-            <span class="hero-detail detail-one"><span aria-hidden="true">🎯</span> Conversion-first</span>
-            <span class="hero-detail detail-two"><span aria-hidden="true">🚀</span> Live in 14 days</span>
-            <aside class="performance-card"><header><strong>Site performance</strong><span>Post-launch</span></header><div class="perf-row"><img src="public/concept-assets/hosteller-workation.jpg" alt="" /><div><b>The Hosteller</b><small>Bookings · +100%</small></div><strong style="color:var(--purple)">2×</strong></div><div class="perf-row"><img src="public/concept-assets/sitre-01.jpg" alt="" /><div><b>Mogg's Estates</b><small>Leads · +103%</small></div><strong style="color:var(--purple)">↑103%</strong></div></aside>
+            <article class="media-card side-a"><div class="gumlet-frame"><iframe loading="lazy" title="Yonkomedia campaign creative one" src="https://play.gumlet.io/embed/6a39801c63c8255987aa76cf?background=false&amp;autoplay=true&amp;loop=true&amp;disable_player_controls=false" referrerpolicy="origin" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write"></iframe></div></article>
+            <article class="media-card main"><div class="gumlet-frame"><iframe loading="lazy" title="Yonkomedia campaign creative two" src="https://play.gumlet.io/embed/6a397c1463c8255987aa20ff?background=false&amp;autoplay=true&amp;loop=true&amp;disable_player_controls=false" referrerpolicy="origin" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write"></iframe></div></article>
+            <article class="media-card side-b"><div class="gumlet-frame"><iframe loading="lazy" title="Yonkomedia campaign creative three" src="https://play.gumlet.io/embed/6a39762ba414128b0877a476?background=false&amp;autoplay=true&amp;loop=true&amp;disable_player_controls=false" referrerpolicy="origin" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write"></iframe></div></article>
+            <span class="reaction one" role="img" aria-label="Growth rocket">🚀</span>
+            <span class="reaction two" role="img" aria-label="Campaign momentum">🔥</span>
+            <span class="hero-detail detail-one"><span aria-hidden="true">⚡</span> Creative velocity</span>
+            <span class="hero-detail detail-two"><span aria-hidden="true">📈</span> ROAS moving up</span>
+            <aside class="performance-card"><header><strong>Top campaigns</strong><span>30 days</span></header><div class="perf-row"><img src="public/concept-assets/hosteller-workation.jpg" alt="" /><div><b>Workation offer</b><small>Meta · Static</small></div><strong>11×</strong></div><div class="perf-row"><img src="public/concept-assets/sitre-01.jpg" alt="" /><div><b>Product story</b><small>Meta · Static</small></div><strong>8.4×</strong></div></aside>
           </div>
         </div>
       </section>
     </section>
 
     <section class="trust" aria-label="Trusted brands">
-      <p class="trust-label">Websites built for brands that mean business.</p>
+      <p class="trust-label">Trusted by ambitious brands to grow.</p>
       <div class="trust-grid">
-        <button class="brand-mark" type="button">The Hosteller<span class="brand-story">Creative and paid-media systems built to turn travel intent into bookings.</span></button>
-        <button class="brand-mark" type="button">Mogg's Estates<span class="brand-story">Sharper property messaging designed to convert qualified demand.</span></button>
-        <button class="brand-mark" type="button" style="font-family:Georgia,serif;font-size:24px;font-weight:400">sitre<span class="brand-story">Performance creative that made intimate care feel considered and current.</span></button>
-        <button class="brand-mark" type="button">TESU<span class="brand-story">Product-first creative developed for clearer offers and faster decisions.</span></button>
-        <button class="brand-mark" type="button">Walk of Elegance<span class="brand-story">A cleaner growth story for a fashion brand with strong visual equity.</span></button>
-        <button class="brand-mark" type="button">CoLLearn<span class="brand-story">Campaign structure and messaging built around learner acquisition.</span></button>
-        <button class="brand-mark" type="button">Jadecaps<span class="brand-story">Conversion-led creative for a high-consideration consumer journey.</span></button>
-        <button class="brand-mark" type="button">Bajaj Finserv<span class="brand-story">Clearer acquisition communication for complex financial products.</span></button>
-        <button class="brand-mark" type="button"><i class="fa-brands fa-microsoft" aria-hidden="true"></i>Microsoft<span class="brand-story">Enterprise-grade communication delivered with speed and clarity.</span></button>
-        <button class="brand-mark" type="button">+ more<span class="brand-story">Across travel, finance, education, wellness and e-commerce.</span></button>
+        <button class="brand-mark" type="button">The Hosteller<span class="brand-story">Grew the brand's organic community from 150K to 668K+.</span></button>
+        <button class="brand-mark" type="button">Mogg's Estates<span class="brand-story">Increased leads by 112% and farm-plot bookings by 26%.</span></button>
+        <button class="brand-mark" type="button" style="font-family:Georgia,serif;font-size:24px;font-weight:400">sitre<span class="brand-story">Scaled monthly recurring revenue from $14K to $59K.</span></button>
+        <button class="brand-mark" type="button">TESU</button>
+        <button class="brand-mark" type="button">Walk of Elegance</button>
+        <button class="brand-mark" type="button">CoLLearn</button>
+        <button class="brand-mark" type="button">Jadecaps<span class="brand-story">Repositioned the brand with sharper messaging and a clearer market story.</span></button>
+        <button class="brand-mark" type="button">Bajaj Finserv</button>
+        <button class="brand-mark" type="button">+ more</button>
       </div>
     </section>
 
     <section class="section system" id="system">
       <div class="system-sticky">
       <div class="section-head reveal">
-        <div><p class="eyebrow">What we build</p><h2>Three types of sites.<br>One goal.</h2></div>
-        <p class="lede">Strategy first. Design second. Everything built around one question: will this convert?</p>
+        <div><p class="eyebrow">Our methodology</p><h2>The growth system<br>we build for you.</h2></div>
+        <p class="lede">Three core pillars working together to acquire more customers, increase profitability and create predictable growth.</p>
       </div>
       <div class="system-grid">
         <article class="service-card reveal">
-          <div class="service-title-row"><span class="service-icon" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></span><div class="service-heading"><h3>Campaign Landing Pages</h3></div></div>
-          <p class="service-copy">You're paying for every click. If the page they land on doesn't convert, that's just wasted budget. One clear offer. One CTA. Zero distractions.</p>
+          <div class="service-title-row"><span class="service-icon" aria-hidden="true"><i class="fa-solid fa-bullhorn"></i></span><div class="service-heading"><h3>Paid Ads</h3></div></div>
+          <p class="service-copy">Data-driven ad strategies across multiple channels that lower CAC and scale profitably.</p>
           <div class="service-points">
-            <span class="service-point"><span class="check">✓</span>Message match with your ads</span>
-            <span class="service-point"><span class="check">✓</span>Conversion copywriting included</span>
-            <span class="service-point"><span class="check">✓</span>Mobile-first &amp; fast-loading</span>
-            <span class="service-point"><span class="check">✓</span>A/B test-ready from day one</span>
-            <span class="service-point"><span class="check">✓</span>Pixel &amp; tracking setup</span>
+            <span class="service-point"><span class="check">✓</span>Multi-channel campaign management</span>
+            <span class="service-point"><span class="check">✓</span>Audience research &amp; segmentation</span>
+            <span class="service-point"><span class="check">✓</span>Budget allocation &amp; scaling</span>
+            <span class="service-point"><span class="check">✓</span>Daily optimization</span>
+            <span class="service-point"><span class="check">✓</span>Transparent reporting</span>
           </div>
           <div class="service-visual paid-motion" aria-label="Paid media channel planning animation">
             <div class="channel-board">
@@ -441,20 +582,19 @@
               <div class="channel-route google-route"><span class="route-icon"><i class="fa-brands fa-google"></i></span><div><strong>Google</strong><i></i></div></div>
               <div class="channel-route tiktok-route"><span class="route-icon"><i class="fa-brands fa-tiktok"></i></span><div><strong>TikTok</strong><i></i></div></div>
             </div>
-            <span class="motion-chip chip-budget">Budget follows performance</span>
             <span class="motion-chip chip-scale"><i class="fa-solid fa-arrow-up"></i> Scale</span>
           </div>
         </article>
 
         <article class="service-card reveal">
-          <div class="service-title-row"><span class="service-icon" aria-hidden="true"><i class="fa-solid fa-globe"></i></span><div class="service-heading"><h3>Full Business Websites</h3></div></div>
-          <p class="service-copy">Your brand's 24/7 salesperson. Strategy-led, conversion-focused, designed to work with your paid media — not just win awards.</p>
+          <div class="service-title-row"><span class="service-icon" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></span><div class="service-heading"><h3>Creative Strategy</h3></div></div>
+          <p class="service-copy">In 2026, creative is the advantage. We craft high-performing creatives that stop the scroll and drive action.</p>
           <div class="service-points">
-            <span class="service-point"><span class="check">✓</span>Strategy &amp; discovery session</span>
-            <span class="service-point"><span class="check">✓</span>Full design + copywriting</span>
-            <span class="service-point"><span class="check">✓</span>Next.js, Framer or Webflow</span>
-            <span class="service-point"><span class="check">✓</span>SEO foundations built-in</span>
-            <span class="service-point"><span class="check">✓</span>Pixel, CAPI &amp; GA4 setup</span>
+            <span class="service-point"><span class="check">✓</span>Creative research &amp; concepts</span>
+            <span class="service-point"><span class="check">✓</span>Hook, angle &amp; offer testing</span>
+            <span class="service-point"><span class="check">✓</span>Video, static &amp; carousel ads</span>
+            <span class="service-point"><span class="check">✓</span>UGC &amp; creator collaborations</span>
+            <span class="service-point"><span class="check">✓</span>Continuous iteration</span>
           </div>
           <div class="service-visual creative-motion" aria-label="Animated square creative concepts">
             <figure class="creative-motion-card"><img src="public/concept-assets/hosteller-workation.jpg" alt="The Hosteller workation campaign creative"></figure>
@@ -465,14 +605,14 @@
         </article>
 
         <article class="service-card reveal">
-          <div class="service-title-row"><span class="service-icon" aria-hidden="true"><i class="fa-solid fa-cart-shopping"></i></span><div class="service-heading"><h3>E-Commerce Stores</h3></div></div>
-          <p class="service-copy">Fewer abandoned carts. More completed purchases. We design every step of the buying journey to remove friction — not add it.</p>
+          <div class="service-title-row"><span class="service-icon" aria-hidden="true"><i class="fa-solid fa-arrow-trend-up"></i></span><div class="service-heading"><h3>Conversion Optimization</h3></div></div>
+          <p class="service-copy">More traffic means nothing if it doesn't convert. We fix leaks and turn visitors into buyers.</p>
           <div class="service-points">
-            <span class="service-point"><span class="check">✓</span>Shopify or custom build</span>
-            <span class="service-point"><span class="check">✓</span>Product page optimisation</span>
-            <span class="service-point"><span class="check">✓</span>Checkout flow redesign</span>
-            <span class="service-point"><span class="check">✓</span>Upsell &amp; cross-sell structure</span>
-            <span class="service-point"><span class="check">✓</span>Built to run with your ads</span>
+            <span class="service-point"><span class="check">✓</span>Landing page &amp; funnel audits</span>
+            <span class="service-point"><span class="check">✓</span>Product page optimization</span>
+            <span class="service-point"><span class="check">✓</span>Conversion rate optimization</span>
+            <span class="service-point"><span class="check">✓</span>A/B testing</span>
+            <span class="service-point"><span class="check">✓</span>Data-backed recommendations</span>
           </div>
           <div class="service-visual conversion-motion" aria-label="Conversion journey optimization animation">
             <div class="conversion-path">
@@ -487,30 +627,45 @@
         </article>
       </div>
       </div>
-      <p class="method-note method-outro reveal"><span aria-hidden="true">🌐</span><strong>Landing pages. Full sites. E-commerce.</strong><span>One goal: turn your paid traffic into customers.</span><span aria-hidden="true">🚀</span></p>
+      <p class="method-note method-outro method-outro-desktop reveal"><span aria-hidden="true">🚀</span><strong>Strategy, creativity and conversion.</strong><span>Three levers. One goal: profitable growth.</span><span aria-hidden="true">📈</span></p>
+      <p class="method-note method-outro method-outro-mobile reveal">Strategy, creativity and conversion work together to drive profitable growth.</p>
     </section>
 
     <section class="creative-showcase" id="creative-work">
-      <div class="section-head reveal"><div><p class="eyebrow">Our work</p><h2>Every pixel earns its place.</h2></div><p class="lede">We're not interested in websites that win awards. We're interested in websites that win customers. Here's some of what we've shipped.</p></div>
+      <div class="section-head reveal"><div><p class="eyebrow">Creative showcase</p><h2>Creative is our strength.</h2></div><p class="lede">Platforms handle the targeting. Creative decides who stops, clicks and converts — which is why creative is the new targeting.</p></div>
       <div class="creative-rows" aria-label="Creative work carousel">
         <div class="creative-marquee row-one">
           <div class="creative-track">
             <div class="creative-group">
-              <article class="showcase-card video"><img src="public/concept-assets/hosteller-story-01.png" alt="The Hosteller vertical video creative"><div class="showcase-shade"></div><div class="showcase-meta"><strong>Hosteller story</strong><span class="showcase-format">Video · 9:16</span></div></article>
-              <article class="showcase-card"><img src="public/concept-assets/hosteller-workation.jpg" alt="The Hosteller workation static ad"><div class="showcase-shade"></div><div class="showcase-meta"><strong>Workation offer</strong><span class="showcase-format">Static · 1:1</span></div></article>
-              <article class="showcase-card"><img src="public/concept-assets/sitre-07.jpg" alt="Sitre product static ad"><div class="showcase-shade"></div><div class="showcase-meta"><strong>Sitre product story</strong><span class="showcase-format">Static · 1:1</span></div></article>
-              <article class="showcase-card"><img src="public/concept-assets/hosteller-kasol.jpg" alt="The Hosteller Kasol static ad"><div class="showcase-shade"></div><div class="showcase-meta"><strong>Destination campaign</strong><span class="showcase-format">Static · 1:1</span></div></article>
-              <article class="showcase-card"><img src="public/concept-assets/sitre-01.jpg" alt="Sitre intimate care static ad"><div class="showcase-shade"></div><div class="showcase-meta"><strong>Product positioning</strong><span class="showcase-format">Static · 1:1</span></div></article>
-              <article class="showcase-card video"><img src="public/concept-assets/hosteller-story-04.png" alt="The Hosteller partner vertical video creative"><div class="showcase-shade"></div><div class="showcase-meta"><strong>Partner story</strong><span class="showcase-format">Video · 9:16</span></div></article>
+              <article class="showcase-card video"><img src="public/concept-assets/hosteller-story-01.png" alt="The Hosteller vertical story creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/gifting-ocean-bottle.jpg" alt="Ocean Bottle sustainability campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/sitre-07.jpg" alt="Sitre product story creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/collearn-02f.png" alt="CoLLearn sports bootcamp campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/gads-creative-02.jpg" alt="Home equity fixed-rate campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/tesu-002.jpg" alt="TESU fashion clearance campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/hosteller-workation.jpg" alt="The Hosteller workation campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/gifting-prodir-04.jpg" alt="Prodir responsible design campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/collearn-python-finance.jpg" alt="CoLLearn Python for Finance campaign creative"></article>
+              <article class="showcase-card video"><img src="public/concept-assets/hosteller-story-04.png" alt="The Hosteller partner story creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/gads-creative-04.jpg" alt="Home equity eligibility campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/sitre-single-02.jpg" alt="Sitre lifestyle campaign creative"></article>
             </div>
           </div>
         </div>
         <div class="creative-marquee row-two">
           <div class="creative-track">
             <div class="creative-group">
-              <article class="showcase-card"><img src="public/concept-assets/sitre-03.jpg" alt="Sitre product design static ad"><div class="showcase-shade"></div><div class="showcase-meta"><strong>Product education</strong><span class="showcase-format">Static · 1:1</span></div></article>
-              <article class="showcase-card"><img src="public/concept-assets/sitre-single-02.jpg" alt="Sitre lifestyle static ad"><div class="showcase-shade"></div><div class="showcase-meta"><strong>Lifestyle creative</strong><span class="showcase-format">Static · 1:1</span></div></article>
-              <article class="showcase-card"><img src="public/concept-assets/sitre-nc-04.jpg" alt="Sitre product benefits static ad"><div class="showcase-shade"></div><div class="showcase-meta"><strong>Benefit-led ad</strong><span class="showcase-format">Static · 1:1</span></div></article>
+              <article class="showcase-card video"><video src="public/concept-assets/tesu-light-comes-on.mp4" aria-label="TESU campaign video" autoplay muted loop playsinline preload="metadata"></video></article>
+              <article class="showcase-card"><img src="public/concept-assets/hosteller-kasol.jpg" alt="The Hosteller destination campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/collearn-01f.png" alt="CoLLearn sports bootcamp benefits creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/sitre-03.jpg" alt="Sitre product design campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/gifting-go-elf.jpg" alt="Ocean Bottle seasonal gifting campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/gads-creative-01.jpg" alt="Home equity funding journey campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/sitre-01.jpg" alt="Sitre intimate care positioning creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/gifting-prodir-03.jpg" alt="Prodir product design campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/gads-creative-03.jpg" alt="Home equity rates campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/tesu-001.jpg" alt="TESU product clearance campaign creative"></article>
+              <article class="showcase-card"><img src="public/concept-assets/sitre-nc-04.jpg" alt="Sitre product benefits campaign creative"></article>
             </div>
           </div>
         </div>
@@ -518,7 +673,7 @@
     </section>
 
     <section class="section process" id="process">
-      <div class="section-head reveal"><div><p class="eyebrow" style="color:var(--purple)">How it works</p><h2>From brief to live<br>in 14 days.</h2></div><p class="lede">No 3-month timelines. No endless revision loops. A focused sprint — strategy to launch in two weeks.</p></div>
+      <div class="section-head reveal"><div><p class="eyebrow" style="color:var(--purple)">How it works</p><h2>From Research To Revenue</h2></div><p class="lede">Every engagement follows the same framework: understand the business, build the system, launch fast and optimize relentlessly.</p></div>
       <div class="process-layout">
         <div class="process-visual reveal">
           <div class="process-scene active" data-process-scene="0">
@@ -568,51 +723,53 @@
           <span class="process-badge" id="process-badge">STEP 1 · Research &amp; Strategy</span>
         </div>
         <div class="process-list"><div class="process-track"><span class="process-fill"></span></div>
-          <article class="process-step active" data-step="0"><span class="process-node">01</span><p class="eyebrow">DAYS 1–2</p><h3>Strategy &amp; Brief</h3><p>We get ruthlessly specific about who you're talking to, what they need to hear and what they need to do next. Everything else follows from this.</p></article>
-          <article class="process-step" data-step="1"><span class="process-node">02</span><p class="eyebrow">DAYS 3–7</p><h3>Design &amp; Copy</h3><p>Every element has a job. Every word earns its place. We write copy and design simultaneously — because in conversion, they're the same thing.</p></article>
-          <article class="process-step" data-step="2"><span class="process-node">03</span><p class="eyebrow">DAYS 7–12</p><h3>Build &amp; Test</h3><p>Clean code. Pages that load fast. Tracking configured before we hand over — so you know exactly what's working from the minute it goes live.</p></article>
-          <article class="process-step" data-step="3"><span class="process-node">04</span><p class="eyebrow">DAY 14</p><h3>Launch</h3><p>Your site is live. Your ads finally have somewhere worth going. Most clients see movement in conversion rates within the first two weeks.</p></article>
-          <article class="process-step" data-step="4"><span class="process-node">05</span><p class="eyebrow">ONGOING</p><h3>Optimise &amp; Improve</h3><p>We stay close after launch. Test what's working, adjust what isn't and keep improving as your traffic and understanding grow.</p></article>
+          <article class="process-step active" data-step="0"><span class="process-node">01</span><p class="eyebrow">STEP 1</p><h3>Research &amp; Strategy</h3><p>We analyse your business, customers, competitors, existing ads and conversion journey to identify the biggest growth opportunities.</p></article>
+          <article class="process-step" data-step="1"><span class="process-node">02</span><p class="eyebrow">STEP 2</p><h3>Creative &amp; Media Planning</h3><p>We define messaging, offers, creative angles, campaign structure and channel strategy before a single dollar is spent.</p></article>
+          <article class="process-step" data-step="2"><span class="process-node">03</span><p class="eyebrow">STEP 3</p><h3>Creative Production &amp; Setup</h3><p>We create the required assets, build campaigns, tracking and reporting infrastructure.</p></article>
+          <article class="process-step" data-step="3"><span class="process-node">04</span><p class="eyebrow">STEP 4</p><h3>Launch</h3><p>Most accounts are ready to launch within the first two weeks after onboarding.</p></article>
+          <article class="process-step" data-step="4"><span class="process-node">05</span><p class="eyebrow">STEP 5</p><h3>Optimization &amp; Scale</h3><p>We continuously test creatives, audiences, offers and landing pages to improve performance and unlock the next stage of growth.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section results" id="results"><div class="section-head reveal"><div><h2>Numbers that actually matter.</h2></div><p class="lede">Not page views. Not bounce rates. Customers and revenue.</p></div><div class="result-grid">
-      <article class="result-card reveal"><div><small>The Hosteller · Booking Flow Rebuild</small><h3>Direct bookings doubled in 90 days.</h3><p>A full redesign of the booking flow — cleaner navigation, faster load times and a page that finally matched the ads driving traffic to it. Direct reservations went from 30% to 60%.</p></div><div class="result-metrics"><div class="result-metric"><strong>2×</strong><span>Direct bookings</span></div><div class="result-metric"><strong>30→60%</strong><span>Direct share</span></div></div></article>
-      <article class="result-card reveal"><div><small>Mogg’s Estates · Landing Page Build</small><h3>103% more qualified plot enquiries.</h3><p>Campaign-specific landing pages built to match their Meta and Google ads. One message, one CTA, no distractions. Enquiries more than doubled — and lead quality went up with them.</p></div><div class="result-metrics"><div class="result-metric"><strong>103%</strong><span>More enquiries</span></div><div class="result-metric"><strong>29%</strong><span>More site visits</span></div></div></article>
-      <article class="result-card reveal"><div><small>E-Commerce Brand · Full Site Rebuild</small><h3>Revenue doubled in 30 days post-launch.</h3><p>Same ad spend. Better site. That was it. New product pages and a rebuilt checkout removed the friction that was costing them sales every single day.</p></div><div class="result-metrics"><div class="result-metric"><strong>2×</strong><span>Revenue</span></div><div class="result-metric"><strong>30</strong><span>Days to results</span></div></div></article>
-    </div></section>
+    <section class="section results" id="results"><div class="section-head reveal"><div><h2>Proof over promises.</h2></div><p class="lede">A few examples of how sharper media, stronger creative and cleaner conversion paths translated into measurable growth.</p></div><div class="case-carousel" data-case-carousel><div class="case-study-stack">
+      <article class="case-study-card reveal"><div class="case-copy"><p class="eyebrow">CASE STUDY 1</p><h3>186% More Leads Through a Multichannel Paid Ads Strategy</h3><p>We rebuilt the acquisition system across paid channels so the business could move from random spikes to a more predictable lead engine.</p><div class="case-proof"><blockquote>“We finally had a predictable lead generation engine instead of random spikes.”</blockquote><div class="case-proof-bottom"><span>Client review</span><a href="#testimonials">View Case Study</a></div></div></div><div class="case-visual leads photo-card" aria-hidden="true"><img class="case-photo" src="public/concept-assets/case-resort.jpg" alt="" /><div class="case-photo-shade"></div><div class="case-chip meta">Meta</div><div class="case-chip google">Google</div><div class="case-chip search">Search</div><div class="image-stat-card"><strong>186%</strong><span>More qualified leads</span></div><div class="case-result-badge">Predictable engine</div></div></article>
+      <article class="case-study-card reveal"><div class="case-copy"><p class="eyebrow">CASE STUDY 2</p><h3>72% Revenue Growth Through Meta &amp; Google Ads</h3><p>Traffic was not the real problem. The winning move was improving campaign structure, creative testing and purchase economics together.</p><div class="case-proof"><blockquote>“The biggest difference wasn't traffic. It was profitability.”</blockquote><div class="case-proof-bottom"><span>Client review</span><a href="#testimonials">View Case Study</a></div></div></div><div class="case-visual revenue" aria-hidden="true"><img class="revenue-art art-one" src="public/concept-assets/sitre-01.jpg" alt="" /><img class="revenue-art art-two" src="public/concept-assets/gads-creative-04.jpg" alt="" /><div class="revenue-card"><small>Revenue lift</small><strong>72%</strong><span>Meta + Google</span></div><div class="case-result-badge">Profit-first scale</div></div></article>
+      <article class="case-study-card reveal"><div class="case-copy"><p class="eyebrow">CASE STUDY 3</p><h3>103% More Plot Bookings &amp; 29% More Site Visits</h3><p>By restructuring campaigns across Meta and Google while improving lead quality, the business generated significantly more qualified enquiries and site visits without increasing complexity.</p><div class="case-proof"><blockquote>“The enquiries became easier to qualify, and site visits moved with them.”</blockquote><div class="case-proof-bottom"><span>Client review</span><a href="#testimonials">View Case Study</a></div></div></div><div class="case-visual farm photo-card" aria-hidden="true"><img class="case-photo" src="public/concept-assets/case-farm.jpg" alt="" /><div class="case-photo-shade"></div><div class="farm-pin"><i class="fa-solid fa-location-dot"></i><span>Site visit</span></div><div class="farm-stat"><strong>103%</strong><span>More plot bookings</span></div><div class="case-result-badge">+29% site visits</div></div></article>
+    </div><div class="case-controls"><div class="case-progress" aria-hidden="true"><span></span></div><div class="case-arrows"><button class="case-arrow prev" type="button" aria-label="Previous case study"><i class="fa-solid fa-arrow-left"></i></button><button class="case-arrow next" type="button" aria-label="Next case study"><i class="fa-solid fa-arrow-right"></i></button></div></div></div></section>
 
-    <section class="testimonials" id="testimonials"><div class="testimonial-sticky"><div class="story-intro"><div class="story-intro-inner"><p class="eyebrow">What clients say</p><h2>Don’t take our word.<br />Take theirs.</h2><p>Real projects. Real results. From the people who trusted us with their most important marketing asset.</p></div></div><p class="story-rail">Client stories · Websites built to convert paid traffic</p><div class="story-track">
-      <article class="story-card"><header class="story-card-head"><span class="story-letter">S</span><div class="story-photo"><img src="public/concept-assets/avatar-1.png" alt="Srishty Arora portrait" /></div></header><div class="story-card-body"><h3>Srishty Arora</h3><span class="story-role">Founder, CoLLearn</span><blockquote>“It never felt like working with an external partner. The thinking was thoughtful, fast and always connected to the business.”</blockquote><footer class="story-card-foot"><span class="story-tag">Growth partner</span><span class="story-stars">★★★★★</span></footer></div></article>
-      <article class="story-card"><header class="story-card-head"><span class="story-letter">J</span><div class="story-photo"><img src="public/concept-assets/avatar-2.png" alt="Julie Herskin portrait" /></div></header><div class="story-card-body"><h3>Julie Herskin</h3><span class="story-role">Co-Founder, Sitre</span><blockquote>“Every decision felt connected to growth — not just more marketing activity.”</blockquote><footer class="story-card-foot"><span class="story-tag">Creative strategy</span><span class="story-stars">★★★★★</span></footer></div></article>
-      <article class="story-card"><header class="story-card-head"><span class="story-letter">P</span><div class="story-photo"><img src="public/concept-assets/avatar-3.png" alt="Pranav Dangi portrait" /></div></header><div class="story-card-body"><h3>Pranav Dangi</h3><span class="story-role">Founder, The Hosteller</span><blockquote>“A rare ability to connect brand, content and business objectives into one cohesive system.”</blockquote><footer class="story-card-foot"><span class="story-tag">Brand growth</span><span class="story-stars">★★★★★</span></footer></div></article>
+    <section class="testimonials" id="testimonials"><div class="testimonial-sticky"><div class="story-intro"><div class="story-intro-inner"><p class="eyebrow">Testimonials</p><h2>Don’t take our word.<br />Take theirs.</h2><p>Real partnerships, real business outcomes and the people who experienced them.</p></div></div><p class="story-rail">Client stories · Creative, media and conversion working together</p><div class="story-track">
+      <article class="story-card"><header class="story-card-head"><span class="story-letter">S</span><div class="story-photo"><img src="public/concept-assets/testimonial-srishty-jain.jpg" alt="Srishty Jain portrait" /></div></header><div class="story-card-body"><h3>Srishty Jain</h3><span class="story-role">Founder, CoLLearn</span><blockquote>“It never felt like working with an external partner. The thinking was thoughtful, fast and always connected to the business.”</blockquote><footer class="story-card-foot"><span class="story-tag">Growth partner</span><span class="story-stars">★★★★★</span></footer></div></article>
+      <article class="story-card"><header class="story-card-head"><span class="story-letter">S</span><div class="story-photo"><img src="public/concept-assets/testimonial-sitre-founders.webp" alt="Sitre founders portrait" /></div></header><div class="story-card-body"><h3>Sitre Founders</h3><span class="story-role">Founders, Sitre</span><blockquote>“Every decision felt connected to growth — not just more marketing activity.”</blockquote><footer class="story-card-foot"><span class="story-tag">Creative strategy</span><span class="story-stars">★★★★★</span></footer></div></article>
+      <article class="story-card"><header class="story-card-head"><span class="story-letter">P</span><div class="story-photo"><img src="public/concept-assets/testimonial-pranav.png" alt="Pranav Dangi portrait" /></div></header><div class="story-card-body"><h3>Pranav Dangi</h3><span class="story-role">Founder, The Hosteller</span><blockquote>“A rare ability to connect brand, content and business objectives into one cohesive system.”</blockquote><footer class="story-card-foot"><span class="story-tag">Brand growth</span><span class="story-stars">★★★★★</span></footer></div></article>
       <article class="story-card"><header class="story-card-head"><span class="story-letter">A</span><div class="story-photo"><img src="public/concept-assets/avatar-4.png" alt="Arjun Shah portrait" /></div></header><div class="story-card-body"><h3>Arjun Shah</h3><span class="story-role">CEO, E-commerce Brand</span><blockquote>“Within 60 days, we were scaling profitably for the first time.”</blockquote><footer class="story-card-foot"><span class="story-tag">Paid media</span><span class="story-stars">★★★★★</span></footer></div></article>
       <article class="story-card"><header class="story-card-head"><span class="story-letter">P</span><div class="story-photo"><img src="public/concept-assets/avatar-2.png" alt="Priya Mehta portrait" /></div></header><div class="story-card-body"><h3>Priya Mehta</h3><span class="story-role">Founder, D2C Brand</span><blockquote>“Not just running ads — thinking deeply about what would make someone stop and buy.”</blockquote><footer class="story-card-foot"><span class="story-tag">Creative testing</span><span class="story-stars">★★★★★</span></footer></div></article>
-      <article class="story-card"><header class="story-card-head"><span class="story-letter">R</span><div class="story-photo"><img src="public/concept-assets/avatar-4.png" alt="Rohit Kapoor portrait" /></div></header><div class="story-card-body"><h3>Rohit Kapoor</h3><span class="story-role">COO, Real Estate Firm</span><blockquote>“We weren’t just getting more enquiries. We were getting much better ones.”</blockquote><footer class="story-card-foot"><span class="story-tag">Lead quality</span><span class="story-stars">★★★★★</span></footer></div></article>
+      <article class="story-card"><header class="story-card-head"><span class="story-letter">A</span><div class="story-photo"><img src="public/concept-assets/testimonial-ankit-goenka.jpg" alt="Ankit Goenka portrait" /></div></header><div class="story-card-body"><h3>Ankit Goenka</h3><span class="story-role">Founder, Mogg's Estates</span><blockquote>“They fixed our positioning and messaging before running the ads — and that clarity changed the whole game for us.”</blockquote><footer class="story-card-foot"><span class="story-tag">Positioning</span><span class="story-stars">★★★★★</span></footer></div></article>
       <article class="story-card"><header class="story-card-head"><span class="story-letter">A</span><div class="story-photo"><img src="public/concept-assets/avatar-3.png" alt="Anika Verma portrait" /></div></header><div class="story-card-body"><h3>Anika Verma</h3><span class="story-role">Marketing Head</span><blockquote>“Everything was tied back to revenue. That clarity changed how we made decisions.”</blockquote><footer class="story-card-foot"><span class="story-tag">Reporting</span><span class="story-stars">★★★★★</span></footer></div></article>
       <article class="story-card"><header class="story-card-head"><span class="story-letter">K</span><div class="story-photo"><img src="public/concept-assets/avatar-1.png" alt="Kabir Nair portrait" /></div></header><div class="story-card-body"><h3>Kabir Nair</h3><span class="story-role">Founder, Hospitality Group</span><blockquote>“The difference was ownership. They genuinely cared about the outcome.”</blockquote><footer class="story-card-foot"><span class="story-tag">Partnership</span><span class="story-stars">★★★★★</span></footer></div></article>
       <aside class="story-rating" aria-label="Overall client rating"><div class="rating-mark"><i aria-hidden="true">🌿</i><strong>4.6/5</strong><i aria-hidden="true">🌿</i></div><span>And many more rated us highly.</span><small>Across strategy, creative, media and growth partnerships.</small><div class="rating-stars" aria-label="Rated 4.6 out of 5">★★★★★</div></aside>
     </div></div></section>
 
-    <section class="section faq-section" id="faq"><div class="faq-shell reveal"><aside class="faq-aside"><div><p class="eyebrow">FAQs</p><h2>What people ask before they start.</h2></div><div class="faq-more"><span class="faq-more-icon" aria-hidden="true"><i class="fa-regular fa-message"></i></span><p>Still have questions?<br />20 minutes on a call answers most of them.</p><button class="primary book-call" type="button">Book a Free Call</button></div></aside><div class="faq-list">
-      <article class="faq-item open"><button class="faq-question" type="button"><span>How long does it actually take?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><div><p>Landing pages: 7 days. Full business websites: 14 days. E-commerce stores: 21 days. Those are real numbers, not "it depends." We move fast because your ads are running now and every day with a weak site costs you.</p></div></div></article>
-      <article class="faq-item"><button class="faq-question" type="button"><span>What platform do you build on?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><div><p>Next.js, Framer, Webflow or Shopify — depending on what you need. We won't upsell you into a platform that doesn't suit you. We'll tell you which one is right on the strategy call.</p></div></div></article>
-      <article class="faq-item"><button class="faq-question" type="button"><span>Do you write the copy?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><div><p>Always. Copy is half the conversion rate and most design studios can't write. We do both because you can't separate a good layout from the words that make it work.</p></div></div></article>
-      <article class="faq-item"><button class="faq-question" type="button"><span>Can you connect it to our Meta and Google ads?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><div><p>Yes. Pixel, Conversions API, Google Tag Manager, GA4 — all configured before we hand the site over. We run paid media too, so we know exactly what needs to be in place.</p></div></div></article>
-      <article class="faq-item"><button class="faq-question" type="button"><span>Do you redesign existing websites?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><div><p>Yes. Most clients come with a site that's underperforming. We audit first, identify where you're losing people, then rebuild — not just a visual refresh but a structural rethink.</p></div></div></article>
-      <article class="faq-item"><button class="faq-question" type="button"><span>What does it cost?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><div><p>Landing pages from $1,500. Full websites from $3,500. E-commerce stores from $5,000. You get a fixed quote after our first call — no surprises and no scope creep.</p></div></div></article>
+    <section class="section faq-section" id="faq"><div class="faq-shell reveal"><aside class="faq-aside"><div><p class="eyebrow">FAQs</p><h2>What brands ask before we start.</h2></div><div class="faq-more"><span class="faq-more-icon" aria-hidden="true"><i class="fa-regular fa-message"></i></span><p>Still need clarity?<br />Book a free strategy call.</p><button class="primary book-call" type="button">Book a Call</button></div></aside><div class="faq-list">
+      <article class="faq-item open"><button class="faq-question" type="button"><span>How soon can we launch?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><div><p>Most accounts are ready to launch within the first two weeks after onboarding.</p></div></div></article>
+      <article class="faq-item"><button class="faq-question" type="button"><span>How long before we evaluate results?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><div><p>We recommend a minimum 90-day window because meaningful optimization needs real data and multiple creative cycles.</p></div></div></article>
+      <article class="faq-item"><button class="faq-question" type="button"><span>Do you manage Meta and Google Ads?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><div><p>Yes. We manage Meta, Google and YouTube depending on where the opportunity exists for your brand.</p></div></div></article>
+      <article class="faq-item"><button class="faq-question" type="button"><span>Do you create the ad creatives too?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><div><p>Yes. Creative strategy and production are part of the system because media buying alone is rarely enough now.</p></div></div></article>
+      <article class="faq-item"><button class="faq-question" type="button"><span>What industries do you work with?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><div><p>Primarily e-commerce, consumer brands, hospitality, real estate and growth-focused businesses.</p></div></div></article>
+      <article class="faq-item"><button class="faq-question" type="button"><span>Do you offer one-time audits?</span><i class="fa-solid fa-plus"></i></button><div class="faq-answer"><div><p>Yes. A focused strategy audit can still identify the biggest growth opportunities even when ongoing management is not the right fit.</p></div></div></article>
     </div></div></section>
 
   </main>
 
-  <footer><div class="footer-shell reveal"><div class="footer-main"><section class="footer-cta"><span class="footer-emoji party" aria-hidden="true">🥳</span><span class="footer-emoji laugh" aria-hidden="true">😂</span><div class="footer-copy"><p class="eyebrow">Ready when you are</p><h2>Let’s build a site your ads deserve.</h2><p class="lede">Book a free strategy call. We’ll look at your current setup, find the conversion gaps and tell you exactly what we’d build and why.</p><button class="primary book-call" type="button">Get a Free Website Audit →</button></div><div class="growth-system" aria-label="Growth system performance preview"><div class="growth-top"><strong>Your growth system</strong><span class="growth-live"><i class="fa-solid fa-circle"></i> Live</span></div><div class="growth-grid"><article class="growth-card"><span class="growth-label">Blended ROAS</span><strong>4.37x</strong><div class="growth-bars" aria-hidden="true"><span style="height:34%"></span><span style="height:48%"></span><span style="height:42%"></span><span style="height:65%"></span><span style="height:58%"></span><span style="height:84%"></span></div></article><article class="growth-card"><span class="growth-label">Revenue driven</span><strong>$1.3M</strong><div class="growth-bars" aria-hidden="true"><span style="height:28%"></span><span style="height:36%"></span><span style="height:53%"></span><span style="height:47%"></span><span style="height:72%"></span><span style="height:91%"></span></div></article><article class="growth-card wide"><div class="growth-thumb"><img src="public/concept-assets/hosteller-workation.jpg" alt="Hosteller campaign creative" /></div><div><span class="growth-label">Top campaign</span><strong>Creative testing system</strong><small>Ads + creative + conversion</small></div><span class="growth-score">+38%</span></article></div></div></section><aside class="footer-links"><a class="footer-brand" href="#top">yonko<span>media</span></a><nav class="footer-nav" aria-label="Footer navigation"><a href="#top">About Us</a><a href="#results">Our Work</a><a href="#system">Services</a><a href="#process">Process</a><a href="#faq">FAQs</a><a href="https://calendly.com/akshay-yonkomedia/30min" target="_blank" rel="noreferrer">Contact Us ↗</a></nav><p class="footer-note">A performance marketing agency where creative, media and conversion work as one growth system.</p></aside></div><div class="footer-bottom"><span>© 2026 Yonkomedia</span><strong>Revenue = Traffic × Conversion × Retention × Pricing</strong></div></div></footer>
+  <footer><div class="footer-shell reveal"><div class="footer-main"><section class="footer-cta"><span class="footer-emoji party" aria-hidden="true">🥳</span><span class="footer-emoji laugh" aria-hidden="true">😂</span><div class="footer-copy"><p class="eyebrow">Ready when you are</p><h2>Let’s build the system behind your next stage of growth.</h2><p class="lede">Book a free strategy call and we’ll identify the biggest opportunities across ads, creative and conversion.</p><button class="primary book-call" type="button">Book a Free Strategy Call →</button></div><div class="growth-system" aria-label="Growth system performance preview"><div class="growth-top"><strong>Your growth system</strong><span class="growth-live"><i class="fa-solid fa-circle"></i> Live</span></div><div class="growth-grid"><article class="growth-card"><span class="growth-label">Blended ROAS</span><strong>4.37x</strong><div class="growth-bars" aria-hidden="true"><span style="height:34%"></span><span style="height:48%"></span><span style="height:42%"></span><span style="height:65%"></span><span style="height:58%"></span><span style="height:84%"></span></div></article><article class="growth-card"><span class="growth-label">Revenue driven</span><strong>$1.3M</strong><div class="growth-bars" aria-hidden="true"><span style="height:28%"></span><span style="height:36%"></span><span style="height:53%"></span><span style="height:47%"></span><span style="height:72%"></span><span style="height:91%"></span></div></article><article class="growth-card wide"><div class="growth-thumb"><img src="public/concept-assets/hosteller-workation.jpg" alt="Hosteller campaign creative" /></div><div><span class="growth-label">Top campaign</span><strong>Creative testing system</strong><small>Ads + creative + conversion</small></div><span class="growth-score">+38%</span></article></div></div></section><aside class="footer-links"><a class="footer-brand" href="#top">yonko<span>media</span></a><nav class="footer-nav" aria-label="Footer navigation"><a href="#top">About Us</a><a href="#results">Our Work</a><a href="#system">Services</a><a href="#process">Process</a><a href="#faq">FAQs</a><a href="https://calendly.com/akshay-yonkomedia/30min" target="_blank" rel="noreferrer">Contact Us ↗</a></nav><p class="footer-note">A performance marketing agency where creative, media and conversion work as one growth system.</p></aside></div><div class="footer-bottom"><span>© 2026 Yonkomedia</span><strong>Revenue = Traffic × Conversion × Retention × Pricing</strong></div></div></footer>
 
   <script>
     const paidAds=document.querySelector('.paid-ads');paidAds.addEventListener('click',event=>{event.stopPropagation();paidAds.classList.toggle('open')});document.addEventListener('click',()=>paidAds.classList.remove('open'));
     const nav=document.querySelector('.site-nav');const menu=document.querySelector('.menu-toggle');const scrollCall=document.querySelector('.scroll-call');menu.addEventListener('click',()=>nav.classList.toggle('open'));document.querySelectorAll('.nav-links a').forEach(link=>link.addEventListener('click',()=>nav.classList.remove('open')));const updateScrollCall=()=>scrollCall.classList.toggle('visible',window.scrollY>110);window.addEventListener('scroll',updateScrollCall,{passive:true});updateScrollCall();
     const heroMedia=document.querySelector('.hero-media');const rotateHeroCards=()=>{const center=heroMedia.querySelector('.media-card.main');const left=heroMedia.querySelector('.media-card.side-a');const right=heroMedia.querySelector('.media-card.side-b');center.classList.replace('main','side-a');right.classList.replace('side-b','main');left.classList.replace('side-a','side-b')};if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(rotateHeroCards,4800);
     const openCall=()=>window.open('https://calendly.com/akshay-yonkomedia/30min','_blank','noopener');document.querySelectorAll('.book-call').forEach(button=>button.addEventListener('click',openCall));
+    document.querySelectorAll('[data-case-carousel]').forEach(carousel=>{const track=carousel.querySelector('.case-study-stack');const cards=[...carousel.querySelectorAll('.case-study-card')];const progress=carousel.querySelector('.case-progress span');let active=0;const positions=()=>{const first=cards[0].offsetLeft;return cards.map(card=>card.offsetLeft-first)};const setProgress=index=>{if(progress)progress.style.transform=`translateX(${index*100}%)`};const moveTo=index=>{active=(index+cards.length)%cards.length;track.style.transform=`translate3d(${-positions()[active]}px,0,0)`;setProgress(active)};const move=direction=>moveTo(active+direction);moveTo(0);carousel.querySelector('.case-arrow.prev')?.addEventListener('click',()=>move(-1));carousel.querySelector('.case-arrow.next')?.addEventListener('click',()=>move(1));window.addEventListener('resize',()=>moveTo(active),{passive:true})});
+    const footerCallButton=document.querySelector('.footer-copy .book-call');const syncFooterCallLabel=()=>{if(footerCallButton)footerCallButton.textContent=window.matchMedia('(max-width: 640px)').matches?'Book a Free Strategy Call':'Book a Free Strategy Call →'};syncFooterCallLabel();window.addEventListener('resize',syncFooterCallLabel);
     document.querySelectorAll('.creative-track').forEach(track=>{const group=track.querySelector('.creative-group');const clone=group.cloneNode(true);clone.setAttribute('aria-hidden','true');track.appendChild(clone)});
     const footerGrowthEmojis=document.querySelectorAll('.footer-emoji');if(footerGrowthEmojis[0])footerGrowthEmojis[0].textContent='🚀';if(footerGrowthEmojis[1])footerGrowthEmojis[1].textContent='📈';
     document.querySelectorAll('.story-photo img').forEach((image,index)=>{image.src=`public/concept-assets/testimonial-headshot-${index+1}.png`});
@@ -621,6 +778,7 @@
     const storySection=document.querySelector('.testimonials');const storyTrack=document.querySelector('.story-track');const storyIntro=document.querySelector('.story-intro');const storyRail=document.querySelector('.story-rail');let storyTarget=0;let storyCurrent=0;let storyFrame=0;const storyClamp=value=>Math.min(1,Math.max(0,value));const renderStory=()=>{storyCurrent+=(storyTarget-storyCurrent)*.085;const introExit=storyClamp(storyCurrent/.16);storyIntro.style.opacity=String(1-introExit);storyIntro.style.transform=`translateY(${-introExit*110}px) scale(${1-introExit*.06})`;storyRail.style.opacity=String(1-storyClamp((storyCurrent-.01)/.055));const deckProgress=storyClamp((storyCurrent-.07)/.75);const eased=deckProgress<.5?2*deckProgress*deckProgress:1-Math.pow(-2*deckProgress+2,2)/2;const start=window.innerWidth*1.04;const lastItem=storyTrack.lastElementChild;const endMargin=Math.max(44,window.innerWidth*.055);const end=window.innerWidth-endMargin-(lastItem.offsetLeft+lastItem.offsetWidth);const x=start+(end-start)*eased;storyTrack.style.transform=`translate3d(${x}px,-50%,0)`;if(Math.abs(storyTarget-storyCurrent)>.0005){storyFrame=requestAnimationFrame(renderStory)}else{storyCurrent=storyTarget;storyFrame=0}};const updateStory=()=>{if(!storySection)return;const rect=storySection.getBoundingClientRect();const travel=Math.max(1,rect.height-window.innerHeight);storyTarget=storyClamp(-rect.top/travel);if(!storyFrame)storyFrame=requestAnimationFrame(renderStory)};window.addEventListener('scroll',updateStory,{passive:true});window.addEventListener('resize',updateStory);updateStory();
     document.querySelectorAll('.faq-question').forEach(question=>question.addEventListener('click',()=>{const item=question.closest('.faq-item');document.querySelectorAll('.faq-item').forEach(candidate=>candidate.classList.toggle('open',candidate===item&&!item.classList.contains('open')))}));
     const process=document.querySelector('.process-layout');const processTrack=document.querySelector('.process-track');const steps=[...document.querySelectorAll('.process-step')];const processScenes=[...document.querySelectorAll('[data-process-scene]')];const processFill=document.querySelector('.process-fill');const processBadge=document.querySelector('#process-badge');const processLabels=['STEP 1 · Research & Strategy','STEP 2 · Creative & Media Planning','STEP 3 · Creative Production & Setup','STEP 4 · Launch','STEP 5 · Optimization & Scale'];
+    const mountMobileProcessScenes=()=>{if(!window.matchMedia('(max-width: 640px)').matches||document.querySelector('.process-mobile-visual'))return;processScenes.forEach((scene,index)=>{const frame=document.createElement('div');frame.className='process-mobile-visual';frame.setAttribute('aria-label',`${processLabels[index]} graphic`);const mobileScene=scene.cloneNode(true);mobileScene.removeAttribute('data-process-scene');mobileScene.classList.add('active');frame.appendChild(mobileScene);steps[index].appendChild(frame)})};mountMobileProcessScenes();window.addEventListener('resize',mountMobileProcessScenes);
     const updateProcess=()=>{if(!process||!processTrack)return;const marker=window.innerHeight*.46;const trackRect=processTrack.getBoundingClientRect();const fill=Math.min(trackRect.height,Math.max(0,marker-trackRect.top));processFill.style.height=`${fill}px`;const lineEnd=trackRect.top+fill;let active=0;steps.forEach((step,index)=>{const node=step.querySelector('.process-node');const nodeRect=node.getBoundingClientRect();if(nodeRect.top+nodeRect.height/2<=lineEnd+1)active=index});steps.forEach((step,index)=>step.classList.toggle('active',index===active));processScenes.forEach((scene,index)=>scene.classList.toggle('active',index===active));processBadge.textContent=processLabels[active]};window.addEventListener('scroll',updateProcess,{passive:true});window.addEventListener('resize',updateProcess);updateProcess();
     const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(element=>observer.observe(element));
     document.querySelectorAll('img').forEach(image=>image.addEventListener('error',()=>{image.style.visibility='hidden'}));

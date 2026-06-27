@@ -14,8 +14,8 @@ const config: Config = {
         light: '#FFFFFF',
       },
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-space-grotesk)', 'system-ui', 'sans-serif'],
+        sans: ['Geist', 'system-ui', 'sans-serif'],
+        display: ['Geist', 'system-ui', 'sans-serif'],
       },
       animation: {
         marquee: 'marquee 35s linear infinite',
