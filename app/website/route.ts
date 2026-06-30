@@ -3,7 +3,11 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 
 export async function GET() {
-  const html = readFileSync(join(process.cwd(), 'public', 'website.html'), 'utf8')
+  const html = readFileSync(join(process.cwd(), 'public', 'website.html'), 'utf8').replaceAll(
+    'public/concept-assets/',
+    '/concept-assets/',
+  )
+
   return new NextResponse(html, {
     headers: { 'Content-Type': 'text/html; charset=utf-8' },
   })
