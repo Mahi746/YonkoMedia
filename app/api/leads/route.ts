@@ -20,6 +20,10 @@ export async function POST(req: Request) {
       timeline: body.timeline || '',
       email: body.email || '',
       phone: body.phone || '',
+      source: body.source || '',
+      asset: body.asset || '',
+      page: body.page || '',
+      sender_email: body.sender_email || 'mahipal@yonkomedia.com',
     })
 
     const response = await fetch(`${webhookUrl}?${params.toString()}`, {
